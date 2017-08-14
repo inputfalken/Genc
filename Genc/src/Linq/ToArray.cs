@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace GeneratorAPI.Linq {
+namespace Genc.Linq {
     public static partial class Extensions {
         /// <summary>
         ///     <para>

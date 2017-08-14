@@ -2,10 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using GeneratorAPI.Implementations;
-using GeneratorAPI.Linq;
+using Genc.Implementations;
+using Genc.Linq;
 
-namespace GeneratorAPI {
+namespace Genc {
     /// <summary>
     ///     Provides a set of static members for creating <see cref="IGenerator{T}" />.
     /// </summary>

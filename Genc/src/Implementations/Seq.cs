@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using GeneratorAPI.Utils;
+using Genc.Utils;
 
-namespace GeneratorAPI.Implementations {
+namespace Genc.Implementations {
     /// <summary>
     ///     <para>A Generator using <see cref="IEnumerable{T}" /></para>
     /// </summary>

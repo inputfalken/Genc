@@ -1,4 +1,4 @@
-﻿using GeneratorAPI;
+﻿using Genc;
 using NUnit.Framework;
 using NUnit.Framework.Internal;
 

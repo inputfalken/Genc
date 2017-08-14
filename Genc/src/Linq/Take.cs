@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GeneratorAPI.Linq {
+namespace Genc.Linq {
     public static partial class Extensions {
         /// <summary>
         ///     <para>

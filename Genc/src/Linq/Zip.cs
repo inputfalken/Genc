@@ -1,7 +1,6 @@
 ﻿using System;
-using static GeneratorAPI.Generator;
 
-namespace GeneratorAPI.Linq {
+namespace Genc.Linq {
     public static partial class Extensions {
         /// <summary>
         ///     <para>
@@ -43,7 +42,7 @@ namespace GeneratorAPI.Linq {
             if (first == null) throw new ArgumentNullException(nameof(first));
             if (second == null) throw new ArgumentNullException(nameof(second));
             if (resultSelector == null) throw new ArgumentNullException(nameof(resultSelector));
-            return Function(() => resultSelector(first.Generate(), second.Generate()));
+            return Generator.Function(() => resultSelector(first.Generate(), second.Generate()));
         }
     }
 }

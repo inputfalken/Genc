@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using GeneratorAPI;
-using GeneratorAPI.Linq;
+using Genc;
+using Genc.Linq;
 using NUnit.Framework;
 
 namespace Tests.GeneratorAPI.LinqTests {

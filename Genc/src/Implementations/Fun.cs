@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GeneratorAPI.Implementations {
+namespace Genc.Implementations {
     /// <summary>
     ///     <para>A Generator using <see cref="Func{TResult}"/></para>
     /// </summary>

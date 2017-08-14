@@ -10,7 +10,7 @@ using System.Collections.Generic;
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace GeneratorAPI.Utils {
+namespace Genc.Utils {
     /// <summary>
     ///     Extension methods for <see cref="IEnumerable{T}" /> types.
     /// </summary>

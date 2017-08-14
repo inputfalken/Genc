@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace GeneratorAPI.Linq {
+namespace Genc.Linq {
     /// <summary>
     ///     Provides a set of static methods for <see cref="IGenerator{T}" />.
     /// </summary>

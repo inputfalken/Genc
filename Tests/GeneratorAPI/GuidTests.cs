@@ -1,5 +1,5 @@
 ﻿using System;
-using GeneratorAPI;
+using Genc;
 using NUnit.Framework;
 
 namespace Tests.GeneratorAPI {
