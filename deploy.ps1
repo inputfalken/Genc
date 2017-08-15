@@ -10,12 +10,10 @@ function Pack ([string] $project, [bool] $isBeta) {
   }
   return [System.IO.FileSystemInfo] (Get-ChildItem *.nupkg | select -First 1)
 }
-
 # Deploy package to NuGet.
 function Deploy ([string] $package) {
   dotnet nuget push $package -k $env:NUGET_API_KEY -s 'https://www.nuget.org/api/v2/package'
 }
-
 # If returns true if the branch is develop and false if it's master.
 function Is-beta([string] $branch) {
   switch ($branch) {
@@ -52,22 +50,48 @@ function Fetch-OnlineVersion ([string] $listSource, [string] $projectName, [bool
   }
   return [version] $version
 }
-
+# Gets the local csproj version from the tag 'VersionPrefix'
 function Get-LocalVersion ([string] $project) {
   [string] $versionNodeValue = ((Select-Xml -Path $project -XPath '//VersionPrefix') | select -ExpandProperty node).InnerText
   $version = "$versionNodeValue.0"
   return [version] $version
 }
+# Updates DocFx documentation.
+function Update-GHPages {
+  & nuget install docfx.console -Version 2.22.1 -Source https://www.myget.org/F/docfx/api/v3/index.json
+  & docfx.console.2.22.1\tools\docfx docfx.json
+  if ($lastexitcode -ne 0) {
+    throw [System.Exception] "docfx build failed with exit code $lastexitcode."
+  }
+  git config --global credential.helper store
+  Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:GITHUB_ACCESS_TOKEN):x-oauth-basic@github.com`n"
+  git config --global user.email \<\>
+  git config --global user.name 'CI'
 
+  git clone https://github.com/inputfalken/Genc -b gh-pages origin_site -q
+  Copy-Item origin_site/.git _site -recurse
+  CD _site
+  git add -A 2>&1
+  git commit -m "CI Updates" -q
+  git push origin gh-pages -q
+}
 
 $project = '.\Genc\Genc.csproj'
 $branch = $env:APPVEYOR_REPO_BRANCH
 $isBeta = Is-beta $branch
-[version] $onlineVersion = Fetch-OnlineVersion 'https://nuget.org/api/v2/' 'Genc' $isBeta
-[version] $localVersion = Get-LocalVersion .\Genc\Genc.csproj
 
+[version] $onlineVersion = Fetch-OnlineVersion 'https://nuget.org/api/v2/' 'Genc' $isBeta
+[version] $localVersion = Get-LocalVersion $project
+
+Write-Host "Comparing Local version($localVersion) with online version($onlineVersion)"
 if ($localVersion -gt $onlineVersion) {
   Deploy (Pack $project $isBeta).Name
+  # If it's the master branch
+  if(!$isBeta) {
+    Update-GHPages
+  } else {
+    Write-Host "Beta version, skipping documentation update."
+  }
 } else {
   Write-Host "Local version($localVersion) is not greater than online version($onlineVersion)"
 }
