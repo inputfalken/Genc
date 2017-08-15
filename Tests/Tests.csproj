@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Genc\Genc.csproj" />
+    <ProjectReference Include="..\src\Genc\Genc.csproj" />
   </ItemGroup>
 
   <ItemGroup>

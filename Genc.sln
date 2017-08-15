@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Genc", "Genc\Genc.csproj", "{B9D1C811-6159-413E-BD9F-BA6B241F8DF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Genc", "src\Genc\Genc.csproj", "{B9D1C811-6159-413E-BD9F-BA6B241F8DF4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{D1990188-B39C-45B8-A1EA-D7978AA18918}"
 EndProject
