@@ -52,16 +52,38 @@ namespace Tests.GeneratorAPI.LinqTests {
             var second = Generator.Incrementer(0);
             var result = _generator.Zip(second, (i, i1, counter) => counter);
 
-            Assert.AreEqual(0 , result.Generate());
-            Assert.AreEqual(1 , result.Generate());
-            Assert.AreEqual(2 , result.Generate());
-            Assert.AreEqual(3 , result.Generate());
-            Assert.AreEqual(4 , result.Generate());
-            Assert.AreEqual(5 , result.Generate());
-            Assert.AreEqual(6 , result.Generate());
-            Assert.AreEqual(7 , result.Generate());
-            Assert.AreEqual(8 , result.Generate());
-            Assert.AreEqual(9 , result.Generate());
+            Assert.AreEqual(0, result.Generate());
+            Assert.AreEqual(1, result.Generate());
+            Assert.AreEqual(2, result.Generate());
+            Assert.AreEqual(3, result.Generate());
+            Assert.AreEqual(4, result.Generate());
+            Assert.AreEqual(5, result.Generate());
+            Assert.AreEqual(6, result.Generate());
+            Assert.AreEqual(7, result.Generate());
+            Assert.AreEqual(8, result.Generate());
+            Assert.AreEqual(9, result.Generate());
+        }
+
+        [Test]
+        public void Counter_Same_Behaviour_As_Overload() {
+            var second = Generator.Incrementer(0);
+            var result = Generator.Incrementer(0)
+                .Zip(second, (i, i1, counter) => i + i1);
+
+            var secondOverload = Generator
+                .Incrementer(0);
+            var resultOverload = _generator
+                .Zip(secondOverload, (i, i1) => i + i1);
+
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
         }
 
         [Test(
