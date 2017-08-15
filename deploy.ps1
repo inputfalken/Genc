@@ -76,7 +76,7 @@ function Update-GHPages {
   git push origin gh-pages -q
 }
 
-$project = '.\Genc\Genc.csproj'
+$project = '.\src\Genc\Genc.csproj'
 $branch = $env:APPVEYOR_REPO_BRANCH
 $isBeta = Is-beta $branch
 
