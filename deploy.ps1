@@ -13,7 +13,7 @@ function Pack ([string] $project, [bool] $isBeta) {
 
 # Deploy package to NuGet.
 function Deploy ([string] $package) {
-  dotnet nuget push $package -k $env:NUGET_API_KEY
+  dotnet nuget push $package -k $env:NUGET_API_KEY -s 'https://www.nuget.org/api/v2/package'
 }
 
 # If returns true if the branch is develop and false if it's master.
