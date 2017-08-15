@@ -10,12 +10,10 @@ function Pack ([string] $project, [bool] $isBeta) {
   }
   return [System.IO.FileSystemInfo] (Get-ChildItem *.nupkg | select -First 1)
 }
-
 # Deploy package to NuGet.
 function Deploy ([string] $package) {
   dotnet nuget push $package -k $env:NUGET_API_KEY -s 'https://www.nuget.org/api/v2/package'
 }
-
 # If returns true if the branch is develop and false if it's master.
 function Is-beta([string] $branch) {
   switch ($branch) {
@@ -52,20 +50,21 @@ function Fetch-OnlineVersion ([string] $listSource, [string] $projectName, [bool
   }
   return [version] $version
 }
-
+# Gets the local csproj version from the tag 'VersionPrefix'
 function Get-LocalVersion ([string] $project) {
   [string] $versionNodeValue = ((Select-Xml -Path $project -XPath '//VersionPrefix') | select -ExpandProperty node).InnerText
   $version = "$versionNodeValue.0"
   return [version] $version
 }
 
-
 $project = '.\Genc\Genc.csproj'
 $branch = $env:APPVEYOR_REPO_BRANCH
 $isBeta = Is-beta $branch
-[version] $onlineVersion = Fetch-OnlineVersion 'https://nuget.org/api/v2/' 'Genc' $isBeta
-[version] $localVersion = Get-LocalVersion .\Genc\Genc.csproj
 
+[version] $onlineVersion = Fetch-OnlineVersion 'https://nuget.org/api/v2/' 'Genc' $isBeta
+[version] $localVersion = Get-LocalVersion $project
+
+Write-Host "Comparing Local version($localVersion) with online version($onlineVersion)"
 if ($localVersion -gt $onlineVersion) {
   Deploy (Pack $project $isBeta).Name
 } else {
