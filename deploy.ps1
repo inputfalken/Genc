@@ -20,7 +20,7 @@ function Deploy ([string] $package) {
 function Is-beta([string] $branch) {
   switch ($branch) {
     "develop" {
-      Write-Host "Proceeding script with alpha version for branch: $branch." -ForegroundColor yellow
+      Write-Host "Proceeding script with beta version for branch: $branch." -ForegroundColor yellow
       return 1
     }
     "master" {
@@ -44,7 +44,7 @@ function Fetch-OnlineVersion ([string] $listSource, [string] $projectName, [bool
   }
   # $packageName comes in format: "packageName 1.0.0".
   $version = ($packageName.Split(" ") | Select-Object -Last 1)
-  # In alpha version the version also includes the string "version-alpha" where version is the semver.
+  # In beta version the version also includes the string "version-beta" where version is the semver.
   if ($isBeta) {
     $version = ($version | select -Last 1).Split("-") | select -First 1
     # A hack to get set the revision property to zero.
