@@ -29,7 +29,7 @@ namespace Tests.GeneratorAPI.LinqTests {
         }
 
         [Test(
-            Description = "Verify if Generations of string and number can be ziped together"
+            Description = "Verify if Generations of string and number can be zipped together"
         )]
         public void Int_Int() {
             var second = Generator.Incrementer(0);
@@ -47,8 +47,47 @@ namespace Tests.GeneratorAPI.LinqTests {
             Assert.AreEqual(18, result.Generate());
         }
 
+        [Test]
+        public void Counter_Increments() {
+            var second = Generator.Incrementer(0);
+            var result = _generator.Zip(second, (i, i1, counter) => counter);
+
+            Assert.AreEqual(0, result.Generate());
+            Assert.AreEqual(1, result.Generate());
+            Assert.AreEqual(2, result.Generate());
+            Assert.AreEqual(3, result.Generate());
+            Assert.AreEqual(4, result.Generate());
+            Assert.AreEqual(5, result.Generate());
+            Assert.AreEqual(6, result.Generate());
+            Assert.AreEqual(7, result.Generate());
+            Assert.AreEqual(8, result.Generate());
+            Assert.AreEqual(9, result.Generate());
+        }
+
+        [Test]
+        public void Counter_Same_Behaviour_As_Overload() {
+            var second = Generator.Incrementer(0);
+            var result = Generator.Incrementer(0)
+                .Zip(second, (i, i1, counter) => i + i1);
+
+            var secondOverload = Generator
+                .Incrementer(0);
+            var resultOverload = _generator
+                .Zip(secondOverload, (i, i1) => i + i1);
+
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+            Assert.AreEqual(result.Generate(), resultOverload.Generate());
+        }
+
         [Test(
-            Description = "Verifys that the Func is only invoked if Generate is invoked"
+            Description = "Verify that the Func is only invoked if Generate is invoked"
         )]
         public void Is_Evaluated_After_Take_Is_Invoked() {
             var invoked = false;
@@ -71,12 +110,13 @@ namespace Tests.GeneratorAPI.LinqTests {
         }
 
         [Test(
-            Description = "Verify that Zip with null Generator and null second arg throws excpetion"
+            Description = "Verify that Zip with null Generator and null second arg throws exception"
         )]
         public void Null__Generator_Null_Second_Arg() {
             IGenerator<string> generator = null;
+            Func<string, string, string> resultSelector = null;
             Assert.Throws<ArgumentNullException>(
-                () => generator.Zip<string, string, string>(Generator.Function(() => ""), null));
+                () => generator.Zip<string, string, string>(Generator.Function(() => ""), resultSelector));
         }
 
         [Test(
@@ -106,7 +146,7 @@ namespace Tests.GeneratorAPI.LinqTests {
         }
 
         [Test(
-            Description = "Verify that Zip with null Generator and Arguments throws excpetion"
+            Description = "Verify that Zip with null Generator and Arguments throws exception"
         )]
         public void Null_Generator_And_Args_Throws() {
             IGenerator<string> first = null;

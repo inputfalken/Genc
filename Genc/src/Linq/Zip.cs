@@ -44,5 +44,11 @@ namespace Genc.Linq {
             if (resultSelector == null) throw new ArgumentNullException(nameof(resultSelector));
             return Generator.Function(() => resultSelector(first.Generate(), second.Generate()));
         }
+
+        public static IGenerator<TResult> Zip<TSource, TSecond, TResult>(this IGenerator<TSource> first,
+            IGenerator<TSecond> second, Func<TSource, TSecond, int, TResult> resultSelector) {
+            var current = 0;
+            return Zip(first, second, (source, second1) => resultSelector(source, second1, current++));
+        }
     }
 }
