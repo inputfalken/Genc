@@ -25,4 +25,5 @@ test_script:
   - cmd: dotnet test ./Tests/Tests.csproj
 on_finish :
   # any cleaup in here
-deploy: off
+deploy_script:
+  - cmd: powershell -File .\deploy.ps1
