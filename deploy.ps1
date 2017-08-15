@@ -1,9 +1,10 @@
 # Pack package to root directory of project and returns the file.
 function Pack ([string] $project, [bool] $isBeta) {
+  $currentDirectory = (Resolve-Path .\).Path
   if ($isBeta) {
-    dotnet pack $project --version-suffix beta -c Release -o ..\
+    dotnet pack $project --version-suffix beta -c Release -o $currentDirectory
   } else {
-    dotnet pack $project -c Release -o ..\
+    dotnet pack $project -c Release -o $currentDirectory
   }
   if (!$?) {
     throw "$project could not be packed by command 'dotnet pack'."
