@@ -67,7 +67,7 @@ $isBeta = Is-beta $branch
 [version] $localVersion = Get-LocalVersion .\Genc\Genc.csproj
 
 if ($localVersion -gt $onlineVersion) {
-  Deploy (Pack $project $isBeta)
+  Deploy (Pack $project $isBeta).Name
 } else {
   Write-Host "Local version($localVersion) is not greater than online version($onlineVersion)"
 }
