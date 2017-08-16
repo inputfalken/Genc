@@ -89,13 +89,14 @@ $isBeta = Is-beta $branch
 
 Write-Host "Comparing Local version($localVersion) with online version($onlineVersion)"
 if ($localVersion -gt $onlineVersion) {
+  Write-Host "Local version($localVersion) is greater than the online version($onlineVersion), performing deployment" -ForegroundColor Yellow
   Deploy (Pack $project $isBeta).Name
   # If it's the master branch
   if(!$isBeta) {
     Update-GHPages
   } else {
-    Write-Host "Beta version, skipping documentation update."
+    Write-Host "Beta version, skipping documentation update." -ForegroundColor Yellow
   }
 } else {
-  Write-Host "Local version($localVersion) is not greater than online version($onlineVersion)"
+  Write-Host "Local version($localVersion) is not greater than online version($onlineVersion), skipping deployment" -ForegroundColor Yellow
 }
