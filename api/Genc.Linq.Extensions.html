@@ -1,0 +1,2061 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Extensions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Extensions
+   ">
+    <meta name="generator" content="docfx 2.22.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Genc.Linq.Extensions">
+  
+  
+  <h1 id="Genc_Linq_Extensions" data-uid="Genc.Linq.Extensions" class="text-break">Class Extensions
+  </h1>
+  <div class="markdown level0 summary"><p>Provides a set of static methods for <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Extensions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Genc.Linq.html">Genc.Linq</a></h6>
+  <h6><strong>Assembly</strong>: Genc.dll</h6>
+  <h5 id="Genc_Linq_Extensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Extensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_Cast__1_Genc_IGenerator_.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.Cast%60%601(Genc.IGenerator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/Cast.cs/#L27">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_Cast_" data-uid="Genc.Linq.Extensions.Cast*"></a>
+  <h4 id="Genc_Linq_Extensions_Cast__1_Genc_IGenerator_" data-uid="Genc.Linq.Extensions.Cast``1(Genc.IGenerator)">Cast&lt;TResult&gt;(IGenerator)</h4>
+  <div class="markdown level1 summary"><p>
+    Creates a <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> by casting each element to <code data-dev-comment-type="typeparamref">TResult</code> when invoking
+<a class="xref" href="Genc.IGenerator.html#Genc_IGenerator_Generate">Generate()</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGenerator&lt;TResult&gt; Cast&lt;TResult&gt;(this IGenerator generator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator.html">IGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>The <a class="xref" href="Genc.IGenerator.html">IGenerator</a> that contains the elements to be cast to type
+<code data-dev-comment-type="typeparamref">TResult</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TResult&gt;</td>
+        <td><p>A <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> whose generations have been casted to type <code data-dev-comment-type="typeparamref">TResult</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type to be used when casting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Genc_Linq_Extensions_Cast__1_Genc_IGenerator__examples">Examples</h5>
+  <pre><code class="C#" region="Generator.Cast" source="Examples\Generator.cs"></code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">generator</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidCastException</span></td>
+        <td><p>A generated element cannot be cast to type
+<code data-dev-comment-type="typeparamref">TResult</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_Do__1_Genc_IGenerator___0__System_Action___0__.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.Do%60%601(Genc.IGenerator%7B%60%600%7D%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/Do.cs/#L29">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_Do_" data-uid="Genc.Linq.Extensions.Do*"></a>
+  <h4 id="Genc_Linq_Extensions_Do__1_Genc_IGenerator___0__System_Action___0__" data-uid="Genc.Linq.Extensions.Do``1(Genc.IGenerator{``0},System.Action{``0})">Do&lt;TSource&gt;(IGenerator&lt;TSource&gt;, Action&lt;TSource&gt;)</h4>
+  <div class="markdown level1 summary"><p>
+    Exposes the element from <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGenerator&lt;TSource&gt; Do&lt;TSource&gt;(this IGenerator&lt;TSource&gt; generator, Action&lt;TSource&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>The <code data-dev-comment-type="paramref">generator</code> whose elements is passed to <span class="xref">System.Action&lt;T&gt;</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TSource&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>The <span class="xref">System.Action&lt;T&gt;</span> which all generations will be passed to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><p>A <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> whose elements has been exposed to <span class="xref">System.Action&lt;T&gt;</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements of <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Genc_Linq_Extensions_Do__1_Genc_IGenerator___0__System_Action___0___examples">Examples</h5>
+  <p><p>
+    Here&apos;s an example of how you can expose each generated element.
+    The result is a generator which will call method <span class="xref">System.Console.WriteLine(System.Int32)</span> every time you generate.
+</p></p>
+<pre><code class="c#">     IGenerator&lt;int> = Factory.Incrementer(0).Do((int x) => Console.WriteLine(x));</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">generator</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">action</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_Release__1_Genc_IGenerator___0__System_Int32_.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.Release%60%601(Genc.IGenerator%7B%60%600%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/Release.cs/#L35">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_Release_" data-uid="Genc.Linq.Extensions.Release*"></a>
+  <h4 id="Genc_Linq_Extensions_Release__1_Genc_IGenerator___0__System_Int32_" data-uid="Genc.Linq.Extensions.Release``1(Genc.IGenerator{``0},System.Int32)">Release&lt;TSource&gt;(IGenerator&lt;TSource&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>
+    Releases the number given to <code data-dev-comment-type="paramref">amount</code> immediately from <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGenerator&lt;TSource&gt; Release&lt;TSource&gt;(this IGenerator&lt;TSource&gt; generator, int amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>The <code data-dev-comment-type="paramref">generator</code> whose generations will be released.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The number of generations to be released.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><p>A <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> whose elements has been released by the number equal to argument
+<code data-dev-comment-type="paramref">amount</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements of <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Genc_Linq_Extensions_Release__1_Genc_IGenerator___0__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+    This method is not lazy evaluated, for lazy evaluation see <a class="xref" href="Genc.Linq.Extensions.html#Genc_Linq_Extensions_Skip__1_Genc_IGenerator___0__System_Int32_">Skip&lt;TSource&gt;(IGenerator&lt;TSource&gt;, Int32)</a>.
+</p>
+</div>
+  <h5 id="Genc_Linq_Extensions_Release__1_Genc_IGenerator___0__System_Int32__examples">Examples</h5>
+  <p><p>
+    Here&apos;s an example of releasing 20 elements.
+    The result will be a <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> who has invoked <a class="xref" href="Genc.IGenerator-1.html#Genc_IGenerator_1_Generate">Generate()</a> 20 times.
+</p></p>
+<pre><code class="c#">    IGenerator&lt;int> releasedGenerator = Factory.FirstName().Release(20);</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">generator</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">amount</code> is less than 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_Select__2_Genc_IGenerator___0__System_Func___0___1__.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.Select%60%602(Genc.IGenerator%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/Select.cs/#L36">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_Select_" data-uid="Genc.Linq.Extensions.Select*"></a>
+  <h4 id="Genc_Linq_Extensions_Select__2_Genc_IGenerator___0__System_Func___0___1__" data-uid="Genc.Linq.Extensions.Select``2(Genc.IGenerator{``0},System.Func{``0,``1})">Select&lt;TSource, TResult&gt;(IGenerator&lt;TSource&gt;, Func&lt;TSource, TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>
+    Projects each generation into a new form.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGenerator&lt;TResult&gt; Select&lt;TSource, TResult&gt;(this IGenerator&lt;TSource&gt; generator, Func&lt;TSource, TResult&gt; selector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>The <code data-dev-comment-type="paramref">generator</code> whose generations will invoke the transform function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, TResult&gt;</td>
+        <td><span class="parametername">selector</span></td>
+        <td><p>A transform function to apply to each element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TResult&gt;</td>
+        <td><p>A <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> whose elements are the result of invoking the transform function on each element
+generated by
+<code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements of <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type returned by selector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Genc_Linq_Extensions_Select__2_Genc_IGenerator___0__System_Func___0___1___examples">Examples</h5>
+  <p><p>
+    Here&apos;s an example of transforming a string to int.
+    The result will be a generator which creates integers equal to the length of each first name generated.
+</p></p>
+<pre><code class="c#">    IGenerator&lt;int> = Factory.FirstName().Select((string x) => x.Length);</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">generator</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">selector</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_Select__2_Genc_IGenerator___0__System_Func___0_System_Int32___1__.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.Select%60%602(Genc.IGenerator%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Int32%2C%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/Select.cs/#L76">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_Select_" data-uid="Genc.Linq.Extensions.Select*"></a>
+  <h4 id="Genc_Linq_Extensions_Select__2_Genc_IGenerator___0__System_Func___0_System_Int32___1__" data-uid="Genc.Linq.Extensions.Select``2(Genc.IGenerator{``0},System.Func{``0,System.Int32,``1})">Select&lt;TSource, TResult&gt;(IGenerator&lt;TSource&gt;, Func&lt;TSource, Int32, TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>
+    Projects each generation into a new form and includes a counter for the current generation.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGenerator&lt;TResult&gt; Select&lt;TSource, TResult&gt;(this IGenerator&lt;TSource&gt; generator, Func&lt;TSource, int, TResult&gt; selector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>The <code data-dev-comment-type="paramref">generator</code> whose generations will invoke the transform function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, <span class="xref">System.Int32</span>, TResult&gt;</td>
+        <td><span class="parametername">selector</span></td>
+        <td><p>A transform function to apply to each source element; the second parameter of the
+function represents a counter for the generation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TResult&gt;</td>
+        <td><p>A <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> whose elements are the result of invoking the transform function on each element of
+<code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements of <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type returned by selector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Genc_Linq_Extensions_Select__2_Genc_IGenerator___0__System_Func___0_System_Int32___1___examples">Examples</h5>
+  <p><p>
+    Here&apos;s an example of transforming a string to int with a counter included.
+    The result will be a generator which creates integers equal to the length of each first name generated plus the current generation index.
+</p></p>
+<pre><code class="c#">    IGenerator&lt;int> transformedGenerator = Factory.FirstName().Select((string x, int y) => x.Length + y);</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">generator</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">selector</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_SelectMany__2_Genc_IGenerator___0__System_Func___0_Genc_IGenerator___1___.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.SelectMany%60%602(Genc.IGenerator%7B%60%600%7D%2CSystem.Func%7B%60%600%2CGenc.IGenerator%7B%60%601%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/SelectMany.cs/#L28">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_SelectMany_" data-uid="Genc.Linq.Extensions.SelectMany*"></a>
+  <h4 id="Genc_Linq_Extensions_SelectMany__2_Genc_IGenerator___0__System_Func___0_Genc_IGenerator___1___" data-uid="Genc.Linq.Extensions.SelectMany``2(Genc.IGenerator{``0},System.Func{``0,Genc.IGenerator{``1}})">SelectMany&lt;TSource, TResult&gt;(IGenerator&lt;TSource&gt;, Func&lt;TSource, IGenerator&lt;TResult&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>
+    Creates a <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> by flattening a <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> with another
+<a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> for each invocation of <a class="xref" href="Genc.IGenerator-1.html#Genc_IGenerator_1_Generate">Generate()</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGenerator&lt;TResult&gt; SelectMany&lt;TSource, TResult&gt;(this IGenerator&lt;TSource&gt; generator, Func&lt;TSource, IGenerator&lt;TResult&gt;&gt; selector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>The generator to be flattened.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, <a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TResult&gt;&gt;</td>
+        <td><span class="parametername">selector</span></td>
+        <td><p>A transform function to apply to each element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TResult&gt;</td>
+        <td><p>A <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> whose elements have been flattened by another <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements from <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The return type of function <code data-dev-comment-type="paramref">selector</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">generator</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">selector</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_SelectMany__2_Genc_IGenerator___0__System_Func___0_System_Collections_Generic_IEnumerable___1___.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.SelectMany%60%602(Genc.IGenerator%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/Enumerable.cs/#L22">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_SelectMany_" data-uid="Genc.Linq.Extensions.SelectMany*"></a>
+  <h4 id="Genc_Linq_Extensions_SelectMany__2_Genc_IGenerator___0__System_Func___0_System_Collections_Generic_IEnumerable___1___" data-uid="Genc.Linq.Extensions.SelectMany``2(Genc.IGenerator{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``1}})">SelectMany&lt;TSource, TResult&gt;(IGenerator&lt;TSource&gt;, Func&lt;TSource, IEnumerable&lt;TResult&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>
+    Invokes <a class="xref" href="Genc.IGenerator-1.html#Genc_IGenerator_1_Generate">Generate()</a> for each full iteration of <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGenerator&lt;TResult&gt; SelectMany&lt;TSource, TResult&gt;(this IGenerator&lt;TSource&gt; generator, Func&lt;TSource, IEnumerable&lt;TResult&gt;&gt; enumerableSelector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>The <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TResult&gt;&gt;</td>
+        <td><span class="parametername">enumerableSelector</span></td>
+        <td><p>The function to consume <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TResult&gt;</td>
+        <td><p>TODO</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">generator</code> is null</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">enumerableSelector</code> is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_SelectMany__3_Genc_IGenerator___0__System_Func___0_Genc_IGenerator___1___System_Func___0___1___2__.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.SelectMany%60%603(Genc.IGenerator%7B%60%600%7D%2CSystem.Func%7B%60%600%2CGenc.IGenerator%7B%60%601%7D%7D%2CSystem.Func%7B%60%600%2C%60%601%2C%60%602%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/SelectMany.cs/#L67">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_SelectMany_" data-uid="Genc.Linq.Extensions.SelectMany*"></a>
+  <h4 id="Genc_Linq_Extensions_SelectMany__3_Genc_IGenerator___0__System_Func___0_Genc_IGenerator___1___System_Func___0___1___2__" data-uid="Genc.Linq.Extensions.SelectMany``3(Genc.IGenerator{``0},System.Func{``0,Genc.IGenerator{``1}},System.Func{``0,``1,``2})">SelectMany&lt;TSource, TGenerator, TResult&gt;(IGenerator&lt;TSource&gt;, Func&lt;TSource, IGenerator&lt;TGenerator&gt;&gt;, Func&lt;TSource, TGenerator, TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>
+    Creates a <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> by flattening a <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> with another
+<a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> for each invocation of <a class="xref" href="Genc.IGenerator-1.html#Genc_IGenerator_1_Generate">Generate()</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGenerator&lt;TResult&gt; SelectMany&lt;TSource, TGenerator, TResult&gt;(this IGenerator&lt;TSource&gt; generator, Func&lt;TSource, IGenerator&lt;TGenerator&gt;&gt; selector, Func&lt;TSource, TGenerator, TResult&gt; resultSelector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>The generator to be flattened.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, <a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TGenerator&gt;&gt;</td>
+        <td><span class="parametername">selector</span></td>
+        <td><p>A transform function to apply to each element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, TGenerator, TResult&gt;</td>
+        <td><span class="parametername">resultSelector</span></td>
+        <td><p>A transform function with the result from argument <code data-dev-comment-type="paramref">selector</code> and the element from
+<code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TResult&gt;</td>
+        <td><p>A <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> whose elements have been flattened by an <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements from <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TGenerator</span></td>
+        <td><p>The return type of function <code data-dev-comment-type="paramref">selector</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The return type from function <code data-dev-comment-type="paramref">resultSelector</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">generator</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">selector</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">resultSelector</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_SelectMany__3_Genc_IGenerator___0__System_Func___0_System_Collections_Generic_IEnumerable___1___System_Func___0___1___2__.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.SelectMany%60%603(Genc.IGenerator%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%7D%2CSystem.Func%7B%60%600%2C%60%601%2C%60%602%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/Enumerable.cs/#L47">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_SelectMany_" data-uid="Genc.Linq.Extensions.SelectMany*"></a>
+  <h4 id="Genc_Linq_Extensions_SelectMany__3_Genc_IGenerator___0__System_Func___0_System_Collections_Generic_IEnumerable___1___System_Func___0___1___2__" data-uid="Genc.Linq.Extensions.SelectMany``3(Genc.IGenerator{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``1}},System.Func{``0,``1,``2})">SelectMany&lt;TSource, TCollection, TResult&gt;(IGenerator&lt;TSource&gt;, Func&lt;TSource, IEnumerable&lt;TCollection&gt;&gt;, Func&lt;TSource, TCollection, TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>
+    Invokes <a class="xref" href="Genc.IGenerator-1.html#Genc_IGenerator_1_Generate">Generate()</a> for each full iteration of <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGenerator&lt;TResult&gt; SelectMany&lt;TSource, TCollection, TResult&gt;(this IGenerator&lt;TSource&gt; generator, Func&lt;TSource, IEnumerable&lt;TCollection&gt;&gt; enumerableSelector, Func&lt;TSource, TCollection, TResult&gt; resultSelector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>The <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TCollection&gt;&gt;</td>
+        <td><span class="parametername">enumerableSelector</span></td>
+        <td><p>The function to consume <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, TCollection, TResult&gt;</td>
+        <td><span class="parametername">resultSelector</span></td>
+        <td><p>The function to compose .</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TResult&gt;</td>
+        <td><p>TODO</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TCollection</span></td>
+        <td><p>The type of the <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the returning <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">generator</code> is null</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">enumerableSelector</code> is null</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">resultSelector</code> is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_Skip__1_Genc_IGenerator___0__System_Int32_.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.Skip%60%601(Genc.IGenerator%7B%60%600%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/Skip.cs/#L26">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_Skip_" data-uid="Genc.Linq.Extensions.Skip*"></a>
+  <h4 id="Genc_Linq_Extensions_Skip__1_Genc_IGenerator___0__System_Int32_" data-uid="Genc.Linq.Extensions.Skip``1(Genc.IGenerator{``0},System.Int32)">Skip&lt;TSource&gt;(IGenerator&lt;TSource&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>
+    Skips the number given to <code data-dev-comment-type="paramref">count</code> from <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGenerator&lt;TSource&gt; Skip&lt;TSource&gt;(this IGenerator&lt;TSource&gt; generator, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>The <code data-dev-comment-type="paramref">generator</code> whose generations will be skipped.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of generations to be released.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><p>A <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> whose elements has been skipped by the number equal to argument
+<code data-dev-comment-type="paramref">count</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements of <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Genc_Linq_Extensions_Skip__1_Genc_IGenerator___0__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+    This works the same way as <a class="xref" href="Genc.Linq.Extensions.html#Genc_Linq_Extensions_Release__1_Genc_IGenerator___0__System_Int32_">Release&lt;TSource&gt;(IGenerator&lt;TSource&gt;, Int32)</a> except that it&apos;s lazy evaluated.
+</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">generator</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">count</code> is less than 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_SkipWhile__1_Genc_IGenerator___0__System_Func___0_System_Boolean__System_Int32_.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.SkipWhile%60%601(Genc.IGenerator%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/SkipWhile.cs/#L17">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_SkipWhile_" data-uid="Genc.Linq.Extensions.SkipWhile*"></a>
+  <h4 id="Genc_Linq_Extensions_SkipWhile__1_Genc_IGenerator___0__System_Func___0_System_Boolean__System_Int32_" data-uid="Genc.Linq.Extensions.SkipWhile``1(Genc.IGenerator{``0},System.Func{``0,System.Boolean},System.Int32)">SkipWhile&lt;TSource&gt;(IGenerator&lt;TSource&gt;, Func&lt;TSource, Boolean&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>
+    Denies generated elements until the specified condition in the predicate is matched.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGenerator&lt;TSource&gt; SkipWhile&lt;TSource&gt;(this IGenerator&lt;TSource&gt; generator, Func&lt;TSource, bool&gt; predicate, int threshold = 10000)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>A <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> to generate elements from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>A function to test each element for a condition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">threshold</span></td>
+        <td><p>The amount of attempts before an exception is thrown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><p>A <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> whose generations will continue from the matched predicate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of elements from argument <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_Take__1_Genc_IGenerator___0__System_Int32_.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.Take%60%601(Genc.IGenerator%7B%60%600%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/Take.cs/#L30">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_Take_" data-uid="Genc.Linq.Extensions.Take*"></a>
+  <h4 id="Genc_Linq_Extensions_Take__1_Genc_IGenerator___0__System_Int32_" data-uid="Genc.Linq.Extensions.Take``1(Genc.IGenerator{``0},System.Int32)">Take&lt;TSource&gt;(IGenerator&lt;TSource&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>
+    Creates an <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span> from <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;TSource&gt; Take&lt;TSource&gt;(this IGenerator&lt;TSource&gt; generator, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>The <code data-dev-comment-type="paramref">generator</code> to generate from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to be returned in the <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TSource&gt;</td>
+        <td><p>An <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span> that contains the specified number of elements generated from the argument
+<code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Genc_Linq_Extensions_Take__1_Genc_IGenerator___0__System_Int32__examples">Examples</h5>
+  <p><p>
+    Here&apos;s an example of how you can create an <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span> from a generator.
+</p></p>
+<pre><code class="c#">     IEenumerable&lt;int> = Factory.Incrementer(0).Take(100);</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">generator</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">count</code> is less or equal to zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_TakeWhile__1_Genc_IGenerator___0__System_Func___0_System_Boolean__.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.TakeWhile%60%601(Genc.IGenerator%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/TakeWhile.cs/#L18">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_TakeWhile_" data-uid="Genc.Linq.Extensions.TakeWhile*"></a>
+  <h4 id="Genc_Linq_Extensions_TakeWhile__1_Genc_IGenerator___0__System_Func___0_System_Boolean__" data-uid="Genc.Linq.Extensions.TakeWhile``1(Genc.IGenerator{``0},System.Func{``0,System.Boolean})">TakeWhile&lt;TSource&gt;(IGenerator&lt;TSource&gt;, Func&lt;TSource, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>
+    Returns generations from a <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> as long as a specified condition is true.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;TSource&gt; TakeWhile&lt;TSource&gt;(this IGenerator&lt;TSource&gt; generator, Func&lt;TSource, bool&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>The <code data-dev-comment-type="paramref">generator</code> to generate from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>A function to test each generated element for a condition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TSource&gt;</td>
+        <td><p>An <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span> whose generated elements passed the <code data-dev-comment-type="paramref">predicate</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements of <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Genc_Linq_Extensions_TakeWhile__1_Genc_IGenerator___0__System_Func___0_System_Boolean___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will run forever if the <code data-dev-comment-type="paramref">predicate</code> always returns true.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_ToArray__1_Genc_IGenerator___0__System_Int32_.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.ToArray%60%601(Genc.IGenerator%7B%60%600%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/ToArray.cs/#L24">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_ToArray_" data-uid="Genc.Linq.Extensions.ToArray*"></a>
+  <h4 id="Genc_Linq_Extensions_ToArray__1_Genc_IGenerator___0__System_Int32_" data-uid="Genc.Linq.Extensions.ToArray``1(Genc.IGenerator{``0},System.Int32)">ToArray&lt;TSource&gt;(IGenerator&lt;TSource&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>
+    Creates an array from a <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TSource[] ToArray&lt;TSource&gt;(this IGenerator&lt;TSource&gt; generator, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>A <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> to create an <span class="xref">System.Array</span> from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of elements to be returned in the <span class="xref">System.Array</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TSource[]</td>
+        <td><p>An array that contains elements generated from the input <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements of source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Genc_Linq_Extensions_ToArray__1_Genc_IGenerator___0__System_Int32__examples">Examples</h5>
+  <p><p>
+    Here&apos;s an example of how you can create an <span class="xref">System.Array</span> from a generator.
+</p></p>
+<pre><code class="c#">    int[] arr = Factory.Incrementer(0).ToArray(100);</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_ToDictionary__3_Genc_IGenerator___0__System_Int32_System_Func___0___1__System_Func___0___2__.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.ToDictionary%60%603(Genc.IGenerator%7B%60%600%7D%2CSystem.Int32%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/ToDictionary.cs/#L32">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_ToDictionary_" data-uid="Genc.Linq.Extensions.ToDictionary*"></a>
+  <h4 id="Genc_Linq_Extensions_ToDictionary__3_Genc_IGenerator___0__System_Int32_System_Func___0___1__System_Func___0___2__" data-uid="Genc.Linq.Extensions.ToDictionary``3(Genc.IGenerator{``0},System.Int32,System.Func{``0,``1},System.Func{``0,``2})">ToDictionary&lt;TSource, TKey, TValue&gt;(IGenerator&lt;TSource&gt;, Int32, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>
+    Creates an <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;</span> from a <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> according to specified
+    key selector and element selector functions.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;TKey, TValue&gt; ToDictionary&lt;TSource, TKey, TValue&gt;(this IGenerator&lt;TSource&gt; generator, int count, Func&lt;TSource, TKey&gt; keySelector, Func&lt;TSource, TValue&gt; elementSelector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>A <code data-dev-comment-type="paramref">generator</code> to create a <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;</span> from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to be returned in the <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, TKey&gt;</td>
+        <td><span class="parametername">keySelector</span></td>
+        <td><p>A function to extract a key from each element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, TValue&gt;</td>
+        <td><span class="parametername">elementSelector</span></td>
+        <td><p>A transform function to produce a result element value from each element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;TKey, TValue&gt;</td>
+        <td><p>A <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;</span> that contains values of type TElement selected from the input
+<code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements of <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td><p>The type of the key returned by <code data-dev-comment-type="paramref">keySelector</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td><p>The type of the value returned by <code data-dev-comment-type="paramref">elementSelector</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Genc_Linq_Extensions_ToDictionary__3_Genc_IGenerator___0__System_Int32_System_Func___0___1__System_Func___0___2___examples">Examples</h5>
+  <p><p>
+    Here&apos;s an example of how you can create a <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;</span> from a generator.
+</p></p>
+<pre><code class="c#">    Dictionary&lt;int,int> dict = Factory.Incrementer(0).ToDictionary(100, (int ks) => ks, (int es) => es);</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_ToList__1_Genc_IGenerator___0__System_Int32_.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.ToList%60%601(Genc.IGenerator%7B%60%600%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/ToList.cs/#L28">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_ToList_" data-uid="Genc.Linq.Extensions.ToList*"></a>
+  <h4 id="Genc_Linq_Extensions_ToList__1_Genc_IGenerator___0__System_Int32_" data-uid="Genc.Linq.Extensions.ToList``1(Genc.IGenerator{``0},System.Int32)">ToList&lt;TSource&gt;(IGenerator&lt;TSource&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>
+    Creates a <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> from a <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TSource&gt; ToList&lt;TSource&gt;(this IGenerator&lt;TSource&gt; generator, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>The <span class="xref">System.Collections.Generic.List&lt;T&gt;</span> to create a <span class="xref">System.Collections.Generic.List&lt;T&gt;</span> from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to be returned in the <span class="xref">System.Collections.Generic.List&lt;T&gt;</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;TSource&gt;</td>
+        <td><p>A <span class="xref">System.Collections.Generic.List&lt;T&gt;</span> that contains elements generated from the input <code data-dev-comment-type="paramref">generator</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements of source..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Genc_Linq_Extensions_ToList__1_Genc_IGenerator___0__System_Int32__examples">Examples</h5>
+  <p><p>
+    Here&apos;s an example of how you can create a <span class="xref">System.Collections.Generic.List&lt;T&gt;</span> from a generator.
+</p></p>
+<pre><code class="c#">     list&lt;int> list = Factory.Incrementer(0).ToList(100);</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_Where__1_Genc_IGenerator___0__System_Func___0_System_Boolean__System_Int32_.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.Where%60%601(Genc.IGenerator%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/Where.cs/#L36">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_Where_" data-uid="Genc.Linq.Extensions.Where*"></a>
+  <h4 id="Genc_Linq_Extensions_Where__1_Genc_IGenerator___0__System_Func___0_System_Boolean__System_Int32_" data-uid="Genc.Linq.Extensions.Where``1(Genc.IGenerator{``0},System.Func{``0,System.Boolean},System.Int32)">Where&lt;TSource&gt;(IGenerator&lt;TSource&gt;, Func&lt;TSource, Boolean&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>
+    Filters a <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> based on a predicate.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGenerator&lt;TSource&gt; Where&lt;TSource&gt;(this IGenerator&lt;TSource&gt; generator, Func&lt;TSource, bool&gt; predicate, int threshold = 100000)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>The <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> to filter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>A function to test each generated element for a condition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">threshold</span></td>
+        <td><p>The number of attempts before throwing an exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><p>A <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> whose elements has satisfied the condition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type to be used as input in the <code data-dev-comment-type="paramref">predicate</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Genc_Linq_Extensions_Where__1_Genc_IGenerator___0__System_Func___0_System_Boolean__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+    If the <code data-dev-comment-type="paramref">predicate</code> is not satisfied, a new generation will occur.
+</p>
+</div>
+  <h5 id="Genc_Linq_Extensions_Where__1_Genc_IGenerator___0__System_Func___0_System_Boolean__System_Int32__examples">Examples</h5>
+  <p><p>
+    Here&apos;s an example of how you can set a condition for the <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a>.
+    The result is a generator whose generations will match the condition given.
+</p></p>
+<pre><code class="c#">     IGenerator&lt;int> conditionedGenerator = Factory.Generator.Incrementer(0).Where((int x) => x % 2 == 0);</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">generator</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">predicate</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>The condition can&apos;t be matched within the <code data-dev-comment-type="paramref">threshold</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_Zip__3_Genc_IGenerator___0__Genc_IGenerator___1__System_Func___0___1___2__.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.Zip%60%603(Genc.IGenerator%7B%60%600%7D%2CGenc.IGenerator%7B%60%601%7D%2CSystem.Func%7B%60%600%2C%60%601%2C%60%602%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/Zip.cs/#L39">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_Zip_" data-uid="Genc.Linq.Extensions.Zip*"></a>
+  <h4 id="Genc_Linq_Extensions_Zip__3_Genc_IGenerator___0__Genc_IGenerator___1__System_Func___0___1___2__" data-uid="Genc.Linq.Extensions.Zip``3(Genc.IGenerator{``0},Genc.IGenerator{``1},System.Func{``0,``1,``2})">Zip&lt;TSource, TSecond, TResult&gt;(IGenerator&lt;TSource&gt;, IGenerator&lt;TSecond&gt;, Func&lt;TSource, TSecond, TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>
+    Applies a specified function to the corresponding elements of two Generators, producing a Generator of the
+    results.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGenerator&lt;TResult&gt; Zip&lt;TSource, TSecond, TResult&gt;(this IGenerator&lt;TSource&gt; first, IGenerator&lt;TSecond&gt; second, Func&lt;TSource, TSecond, TResult&gt; resultSelector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">first</span></td>
+        <td><p>The first generator to merge.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSecond&gt;</td>
+        <td><span class="parametername">second</span></td>
+        <td><p>The second generator to merge.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, TSecond, TResult&gt;</td>
+        <td><span class="parametername">resultSelector</span></td>
+        <td><p>A function that specifies how to merge the elements from the two generators.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TResult&gt;</td>
+        <td><p>A <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> that contains merged elements of two input generators.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements of the first generator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSecond</span></td>
+        <td><p>The type of the elements of the second generator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the result from argument <code data-dev-comment-type="paramref">resultSelector</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Genc_Linq_Extensions_Zip__3_Genc_IGenerator___0__Genc_IGenerator___1__System_Func___0___1___2___examples">Examples</h5>
+  <p><p>
+    Here&apos;s an example of how you can merge two <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a>.
+    The result is a <a class="xref" href="Genc.IGenerator-1.html">IGenerator&lt;T&gt;</a> whose generations will invoke the second lambda argument.
+</p></p>
+<pre><code class="c#">     IGenerator&lt;int> randomizer = Factory.Randomizer(10, 100);
+     IGenerator&lt;int> incrementer = Factory.Incrementer(0).Zip(randomizer, (int inc, int rnd) => inc + rnd)</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">first</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">second</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Argument <code data-dev-comment-type="paramref">resultSelector</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions_Zip__3_Genc_IGenerator___0__Genc_IGenerator___1__System_Func___0___1_System_Int32___2__.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions.Zip%60%603(Genc.IGenerator%7B%60%600%7D%2CGenc.IGenerator%7B%60%601%7D%2CSystem.Func%7B%60%600%2C%60%601%2CSystem.Int32%2C%60%602%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/Zip.cs/#L48">View Source</a>
+  </span>
+  <a id="Genc_Linq_Extensions_Zip_" data-uid="Genc.Linq.Extensions.Zip*"></a>
+  <h4 id="Genc_Linq_Extensions_Zip__3_Genc_IGenerator___0__Genc_IGenerator___1__System_Func___0___1_System_Int32___2__" data-uid="Genc.Linq.Extensions.Zip``3(Genc.IGenerator{``0},Genc.IGenerator{``1},System.Func{``0,``1,System.Int32,``2})">Zip&lt;TSource, TSecond, TResult&gt;(IGenerator&lt;TSource&gt;, IGenerator&lt;TSecond&gt;, Func&lt;TSource, TSecond, Int32, TResult&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGenerator&lt;TResult&gt; Zip&lt;TSource, TSecond, TResult&gt;(this IGenerator&lt;TSource&gt; first, IGenerator&lt;TSecond&gt; second, Func&lt;TSource, TSecond, int, TResult&gt; resultSelector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">first</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TSecond&gt;</td>
+        <td><span class="parametername">second</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, TSecond, <span class="xref">System.Int32</span>, TResult&gt;</td>
+        <td><span class="parametername">resultSelector</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Genc.IGenerator-1.html">IGenerator</a>&lt;TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSecond</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/inputfalken/Genc/new/master/apiSpec/new?filename=Genc_Linq_Extensions.md&amp;value=---%0Auid%3A%20Genc.Linq.Extensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/inputfalken/Genc/blob/master/src/Genc/src/Linq/Zip.cs/#L4" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

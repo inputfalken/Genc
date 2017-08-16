@@ -1,0 +1,460 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Genc
+  name: Genc
+  href: api/Genc.html
+  commentId: N:Genc
+  fullName: Genc
+  nameWithType: Genc
+- uid: Genc.Generator
+  name: Generator
+  href: api/Genc.Generator.html
+  commentId: T:Genc.Generator
+  fullName: Genc.Generator
+  nameWithType: Generator
+- uid: Genc.Generator.CircularSequence(System.Collections.IEnumerable)
+  name: CircularSequence(IEnumerable)
+  href: api/Genc.Generator.html#Genc_Generator_CircularSequence_System_Collections_IEnumerable_
+  commentId: M:Genc.Generator.CircularSequence(System.Collections.IEnumerable)
+  fullName: Genc.Generator.CircularSequence(System.Collections.IEnumerable)
+  nameWithType: Generator.CircularSequence(IEnumerable)
+- uid: Genc.Generator.CircularSequence*
+  name: CircularSequence
+  href: api/Genc.Generator.html#Genc_Generator_CircularSequence_
+  commentId: Overload:Genc.Generator.CircularSequence
+  fullName: Genc.Generator.CircularSequence
+  nameWithType: Generator.CircularSequence
+- uid: Genc.Generator.CircularSequence``1(System.Collections.Generic.IEnumerable{``0})
+  name: CircularSequence<TSource>(IEnumerable<TSource>)
+  href: api/Genc.Generator.html#Genc_Generator_CircularSequence__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:Genc.Generator.CircularSequence``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: CircularSequence(Of TSource)(IEnumerable(Of TSource))
+  fullName: Genc.Generator.CircularSequence<TSource>(System.Collections.Generic.IEnumerable<TSource>)
+  fullName.vb: Genc.Generator.CircularSequence(Of TSource)(System.Collections.Generic.IEnumerable(Of TSource))
+  nameWithType: Generator.CircularSequence<TSource>(IEnumerable<TSource>)
+  nameWithType.vb: Generator.CircularSequence(Of TSource)(IEnumerable(Of TSource))
+- uid: Genc.Generator.Create*
+  name: Create
+  href: api/Genc.Generator.html#Genc_Generator_Create_
+  commentId: Overload:Genc.Generator.Create
+  fullName: Genc.Generator.Create
+  nameWithType: Generator.Create
+- uid: Genc.Generator.Create``1(``0)
+  name: Create<TSource>(TSource)
+  href: api/Genc.Generator.html#Genc_Generator_Create__1___0_
+  commentId: M:Genc.Generator.Create``1(``0)
+  name.vb: Create(Of TSource)(TSource)
+  fullName: Genc.Generator.Create<TSource>(TSource)
+  fullName.vb: Genc.Generator.Create(Of TSource)(TSource)
+  nameWithType: Generator.Create<TSource>(TSource)
+  nameWithType.vb: Generator.Create(Of TSource)(TSource)
+- uid: Genc.Generator.Decrementer(System.Int32)
+  name: Decrementer(Int32)
+  href: api/Genc.Generator.html#Genc_Generator_Decrementer_System_Int32_
+  commentId: M:Genc.Generator.Decrementer(System.Int32)
+  fullName: Genc.Generator.Decrementer(System.Int32)
+  nameWithType: Generator.Decrementer(Int32)
+- uid: Genc.Generator.Decrementer*
+  name: Decrementer
+  href: api/Genc.Generator.html#Genc_Generator_Decrementer_
+  commentId: Overload:Genc.Generator.Decrementer
+  fullName: Genc.Generator.Decrementer
+  nameWithType: Generator.Decrementer
+- uid: Genc.Generator.Function*
+  name: Function
+  href: api/Genc.Generator.html#Genc_Generator_Function_
+  commentId: Overload:Genc.Generator.Function
+  fullName: Genc.Generator.Function
+  nameWithType: Generator.Function
+- uid: Genc.Generator.Function``1(System.Func{``0})
+  name: Function<TSource>(Func<TSource>)
+  href: api/Genc.Generator.html#Genc_Generator_Function__1_System_Func___0__
+  commentId: M:Genc.Generator.Function``1(System.Func{``0})
+  name.vb: Function(Of TSource)(Func(Of TSource))
+  fullName: Genc.Generator.Function<TSource>(System.Func<TSource>)
+  fullName.vb: Genc.Generator.Function(Of TSource)(System.Func(Of TSource))
+  nameWithType: Generator.Function<TSource>(Func<TSource>)
+  nameWithType.vb: Generator.Function(Of TSource)(Func(Of TSource))
+- uid: Genc.Generator.Guid
+  name: Guid()
+  href: api/Genc.Generator.html#Genc_Generator_Guid
+  commentId: M:Genc.Generator.Guid
+  fullName: Genc.Generator.Guid()
+  nameWithType: Generator.Guid()
+- uid: Genc.Generator.Guid*
+  name: Guid
+  href: api/Genc.Generator.html#Genc_Generator_Guid_
+  commentId: Overload:Genc.Generator.Guid
+  fullName: Genc.Generator.Guid
+  nameWithType: Generator.Guid
+- uid: Genc.Generator.Incrementer(System.Int32)
+  name: Incrementer(Int32)
+  href: api/Genc.Generator.html#Genc_Generator_Incrementer_System_Int32_
+  commentId: M:Genc.Generator.Incrementer(System.Int32)
+  fullName: Genc.Generator.Incrementer(System.Int32)
+  nameWithType: Generator.Incrementer(Int32)
+- uid: Genc.Generator.Incrementer*
+  name: Incrementer
+  href: api/Genc.Generator.html#Genc_Generator_Incrementer_
+  commentId: Overload:Genc.Generator.Incrementer
+  fullName: Genc.Generator.Incrementer
+  nameWithType: Generator.Incrementer
+- uid: Genc.Generator.Lazy*
+  name: Lazy
+  href: api/Genc.Generator.html#Genc_Generator_Lazy_
+  commentId: Overload:Genc.Generator.Lazy
+  fullName: Genc.Generator.Lazy
+  nameWithType: Generator.Lazy
+- uid: Genc.Generator.Lazy``1(System.Func{``0})
+  name: Lazy<TSource>(Func<TSource>)
+  href: api/Genc.Generator.html#Genc_Generator_Lazy__1_System_Func___0__
+  commentId: M:Genc.Generator.Lazy``1(System.Func{``0})
+  name.vb: Lazy(Of TSource)(Func(Of TSource))
+  fullName: Genc.Generator.Lazy<TSource>(System.Func<TSource>)
+  fullName.vb: Genc.Generator.Lazy(Of TSource)(System.Func(Of TSource))
+  nameWithType: Generator.Lazy<TSource>(Func<TSource>)
+  nameWithType.vb: Generator.Lazy(Of TSource)(Func(Of TSource))
+- uid: Genc.Generator.Lazy``1(System.Lazy{``0})
+  name: Lazy<TSource>(Lazy<TSource>)
+  href: api/Genc.Generator.html#Genc_Generator_Lazy__1_System_Lazy___0__
+  commentId: M:Genc.Generator.Lazy``1(System.Lazy{``0})
+  name.vb: Lazy(Of TSource)(Lazy(Of TSource))
+  fullName: Genc.Generator.Lazy<TSource>(System.Lazy<TSource>)
+  fullName.vb: Genc.Generator.Lazy(Of TSource)(System.Lazy(Of TSource))
+  nameWithType: Generator.Lazy<TSource>(Lazy<TSource>)
+  nameWithType.vb: Generator.Lazy(Of TSource)(Lazy(Of TSource))
+- uid: Genc.Generator.Randomizer(System.Int32,System.Int32,System.Nullable{System.Int32})
+  name: Randomizer(Int32, Int32, Nullable<Int32>)
+  href: api/Genc.Generator.html#Genc_Generator_Randomizer_System_Int32_System_Int32_System_Nullable_System_Int32__
+  commentId: M:Genc.Generator.Randomizer(System.Int32,System.Int32,System.Nullable{System.Int32})
+  name.vb: Randomizer(Int32, Int32, Nullable(Of Int32))
+  fullName: Genc.Generator.Randomizer(System.Int32, System.Int32, System.Nullable<System.Int32>)
+  fullName.vb: Genc.Generator.Randomizer(System.Int32, System.Int32, System.Nullable(Of System.Int32))
+  nameWithType: Generator.Randomizer(Int32, Int32, Nullable<Int32>)
+  nameWithType.vb: Generator.Randomizer(Int32, Int32, Nullable(Of Int32))
+- uid: Genc.Generator.Randomizer(System.Int64,System.Int64,System.Nullable{System.Int32})
+  name: Randomizer(Int64, Int64, Nullable<Int32>)
+  href: api/Genc.Generator.html#Genc_Generator_Randomizer_System_Int64_System_Int64_System_Nullable_System_Int32__
+  commentId: M:Genc.Generator.Randomizer(System.Int64,System.Int64,System.Nullable{System.Int32})
+  name.vb: Randomizer(Int64, Int64, Nullable(Of Int32))
+  fullName: Genc.Generator.Randomizer(System.Int64, System.Int64, System.Nullable<System.Int32>)
+  fullName.vb: Genc.Generator.Randomizer(System.Int64, System.Int64, System.Nullable(Of System.Int32))
+  nameWithType: Generator.Randomizer(Int64, Int64, Nullable<Int32>)
+  nameWithType.vb: Generator.Randomizer(Int64, Int64, Nullable(Of Int32))
+- uid: Genc.Generator.Randomizer*
+  name: Randomizer
+  href: api/Genc.Generator.html#Genc_Generator_Randomizer_
+  commentId: Overload:Genc.Generator.Randomizer
+  fullName: Genc.Generator.Randomizer
+  nameWithType: Generator.Randomizer
+- uid: Genc.IGenerator
+  name: IGenerator
+  href: api/Genc.IGenerator.html
+  commentId: T:Genc.IGenerator
+  fullName: Genc.IGenerator
+  nameWithType: IGenerator
+- uid: Genc.IGenerator.Generate
+  name: Generate()
+  href: api/Genc.IGenerator.html#Genc_IGenerator_Generate
+  commentId: M:Genc.IGenerator.Generate
+  fullName: Genc.IGenerator.Generate()
+  nameWithType: IGenerator.Generate()
+- uid: Genc.IGenerator.Generate*
+  name: Generate
+  href: api/Genc.IGenerator.html#Genc_IGenerator_Generate_
+  commentId: Overload:Genc.IGenerator.Generate
+  fullName: Genc.IGenerator.Generate
+  nameWithType: IGenerator.Generate
+- uid: Genc.IGenerator`1
+  name: IGenerator<T>
+  href: api/Genc.IGenerator-1.html
+  commentId: T:Genc.IGenerator`1
+  name.vb: IGenerator(Of T)
+  fullName: Genc.IGenerator<T>
+  fullName.vb: Genc.IGenerator(Of T)
+  nameWithType: IGenerator<T>
+  nameWithType.vb: IGenerator(Of T)
+- uid: Genc.IGenerator`1.Generate
+  name: Generate()
+  href: api/Genc.IGenerator-1.html#Genc_IGenerator_1_Generate
+  commentId: M:Genc.IGenerator`1.Generate
+  fullName: Genc.IGenerator<T>.Generate()
+  fullName.vb: Genc.IGenerator(Of T).Generate()
+  nameWithType: IGenerator<T>.Generate()
+  nameWithType.vb: IGenerator(Of T).Generate()
+- uid: Genc.IGenerator`1.Generate*
+  name: Generate
+  href: api/Genc.IGenerator-1.html#Genc_IGenerator_1_Generate_
+  commentId: Overload:Genc.IGenerator`1.Generate
+  fullName: Genc.IGenerator<T>.Generate
+  fullName.vb: Genc.IGenerator(Of T).Generate
+  nameWithType: IGenerator<T>.Generate
+  nameWithType.vb: IGenerator(Of T).Generate
+- uid: Genc.Linq
+  name: Genc.Linq
+  href: api/Genc.Linq.html
+  commentId: N:Genc.Linq
+  fullName: Genc.Linq
+  nameWithType: Genc.Linq
+- uid: Genc.Linq.Extensions
+  name: Extensions
+  href: api/Genc.Linq.Extensions.html
+  commentId: T:Genc.Linq.Extensions
+  fullName: Genc.Linq.Extensions
+  nameWithType: Extensions
+- uid: Genc.Linq.Extensions.Cast*
+  name: Cast
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Cast_
+  commentId: Overload:Genc.Linq.Extensions.Cast
+  fullName: Genc.Linq.Extensions.Cast
+  nameWithType: Extensions.Cast
+- uid: Genc.Linq.Extensions.Cast``1(Genc.IGenerator)
+  name: Cast<TResult>(IGenerator)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Cast__1_Genc_IGenerator_
+  commentId: M:Genc.Linq.Extensions.Cast``1(Genc.IGenerator)
+  name.vb: Cast(Of TResult)(IGenerator)
+  fullName: Genc.Linq.Extensions.Cast<TResult>(Genc.IGenerator)
+  fullName.vb: Genc.Linq.Extensions.Cast(Of TResult)(Genc.IGenerator)
+  nameWithType: Extensions.Cast<TResult>(IGenerator)
+  nameWithType.vb: Extensions.Cast(Of TResult)(IGenerator)
+- uid: Genc.Linq.Extensions.Do*
+  name: Do
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Do_
+  commentId: Overload:Genc.Linq.Extensions.Do
+  fullName: Genc.Linq.Extensions.Do
+  nameWithType: Extensions.Do
+- uid: Genc.Linq.Extensions.Do``1(Genc.IGenerator{``0},System.Action{``0})
+  name: Do<TSource>(IGenerator<TSource>, Action<TSource>)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Do__1_Genc_IGenerator___0__System_Action___0__
+  commentId: M:Genc.Linq.Extensions.Do``1(Genc.IGenerator{``0},System.Action{``0})
+  name.vb: Do(Of TSource)(IGenerator(Of TSource), Action(Of TSource))
+  fullName: Genc.Linq.Extensions.Do<TSource>(Genc.IGenerator<TSource>, System.Action<TSource>)
+  fullName.vb: Genc.Linq.Extensions.Do(Of TSource)(Genc.IGenerator(Of TSource), System.Action(Of TSource))
+  nameWithType: Extensions.Do<TSource>(IGenerator<TSource>, Action<TSource>)
+  nameWithType.vb: Extensions.Do(Of TSource)(IGenerator(Of TSource), Action(Of TSource))
+- uid: Genc.Linq.Extensions.Release*
+  name: Release
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Release_
+  commentId: Overload:Genc.Linq.Extensions.Release
+  fullName: Genc.Linq.Extensions.Release
+  nameWithType: Extensions.Release
+- uid: Genc.Linq.Extensions.Release``1(Genc.IGenerator{``0},System.Int32)
+  name: Release<TSource>(IGenerator<TSource>, Int32)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Release__1_Genc_IGenerator___0__System_Int32_
+  commentId: M:Genc.Linq.Extensions.Release``1(Genc.IGenerator{``0},System.Int32)
+  name.vb: Release(Of TSource)(IGenerator(Of TSource), Int32)
+  fullName: Genc.Linq.Extensions.Release<TSource>(Genc.IGenerator<TSource>, System.Int32)
+  fullName.vb: Genc.Linq.Extensions.Release(Of TSource)(Genc.IGenerator(Of TSource), System.Int32)
+  nameWithType: Extensions.Release<TSource>(IGenerator<TSource>, Int32)
+  nameWithType.vb: Extensions.Release(Of TSource)(IGenerator(Of TSource), Int32)
+- uid: Genc.Linq.Extensions.Select*
+  name: Select
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Select_
+  commentId: Overload:Genc.Linq.Extensions.Select
+  fullName: Genc.Linq.Extensions.Select
+  nameWithType: Extensions.Select
+- uid: Genc.Linq.Extensions.Select``2(Genc.IGenerator{``0},System.Func{``0,``1})
+  name: Select<TSource, TResult>(IGenerator<TSource>, Func<TSource, TResult>)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Select__2_Genc_IGenerator___0__System_Func___0___1__
+  commentId: M:Genc.Linq.Extensions.Select``2(Genc.IGenerator{``0},System.Func{``0,``1})
+  name.vb: Select(Of TSource, TResult)(IGenerator(Of TSource), Func(Of TSource, TResult))
+  fullName: Genc.Linq.Extensions.Select<TSource, TResult>(Genc.IGenerator<TSource>, System.Func<TSource, TResult>)
+  fullName.vb: Genc.Linq.Extensions.Select(Of TSource, TResult)(Genc.IGenerator(Of TSource), System.Func(Of TSource, TResult))
+  nameWithType: Extensions.Select<TSource, TResult>(IGenerator<TSource>, Func<TSource, TResult>)
+  nameWithType.vb: Extensions.Select(Of TSource, TResult)(IGenerator(Of TSource), Func(Of TSource, TResult))
+- uid: Genc.Linq.Extensions.Select``2(Genc.IGenerator{``0},System.Func{``0,System.Int32,``1})
+  name: Select<TSource, TResult>(IGenerator<TSource>, Func<TSource, Int32, TResult>)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Select__2_Genc_IGenerator___0__System_Func___0_System_Int32___1__
+  commentId: M:Genc.Linq.Extensions.Select``2(Genc.IGenerator{``0},System.Func{``0,System.Int32,``1})
+  name.vb: Select(Of TSource, TResult)(IGenerator(Of TSource), Func(Of TSource, Int32, TResult))
+  fullName: Genc.Linq.Extensions.Select<TSource, TResult>(Genc.IGenerator<TSource>, System.Func<TSource, System.Int32, TResult>)
+  fullName.vb: Genc.Linq.Extensions.Select(Of TSource, TResult)(Genc.IGenerator(Of TSource), System.Func(Of TSource, System.Int32, TResult))
+  nameWithType: Extensions.Select<TSource, TResult>(IGenerator<TSource>, Func<TSource, Int32, TResult>)
+  nameWithType.vb: Extensions.Select(Of TSource, TResult)(IGenerator(Of TSource), Func(Of TSource, Int32, TResult))
+- uid: Genc.Linq.Extensions.SelectMany*
+  name: SelectMany
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_SelectMany_
+  commentId: Overload:Genc.Linq.Extensions.SelectMany
+  fullName: Genc.Linq.Extensions.SelectMany
+  nameWithType: Extensions.SelectMany
+- uid: Genc.Linq.Extensions.SelectMany``2(Genc.IGenerator{``0},System.Func{``0,Genc.IGenerator{``1}})
+  name: SelectMany<TSource, TResult>(IGenerator<TSource>, Func<TSource, IGenerator<TResult>>)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_SelectMany__2_Genc_IGenerator___0__System_Func___0_Genc_IGenerator___1___
+  commentId: M:Genc.Linq.Extensions.SelectMany``2(Genc.IGenerator{``0},System.Func{``0,Genc.IGenerator{``1}})
+  name.vb: SelectMany(Of TSource, TResult)(IGenerator(Of TSource), Func(Of TSource, IGenerator(Of TResult)))
+  fullName: Genc.Linq.Extensions.SelectMany<TSource, TResult>(Genc.IGenerator<TSource>, System.Func<TSource, Genc.IGenerator<TResult>>)
+  fullName.vb: Genc.Linq.Extensions.SelectMany(Of TSource, TResult)(Genc.IGenerator(Of TSource), System.Func(Of TSource, Genc.IGenerator(Of TResult)))
+  nameWithType: Extensions.SelectMany<TSource, TResult>(IGenerator<TSource>, Func<TSource, IGenerator<TResult>>)
+  nameWithType.vb: Extensions.SelectMany(Of TSource, TResult)(IGenerator(Of TSource), Func(Of TSource, IGenerator(Of TResult)))
+- uid: Genc.Linq.Extensions.SelectMany``2(Genc.IGenerator{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``1}})
+  name: SelectMany<TSource, TResult>(IGenerator<TSource>, Func<TSource, IEnumerable<TResult>>)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_SelectMany__2_Genc_IGenerator___0__System_Func___0_System_Collections_Generic_IEnumerable___1___
+  commentId: M:Genc.Linq.Extensions.SelectMany``2(Genc.IGenerator{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``1}})
+  name.vb: SelectMany(Of TSource, TResult)(IGenerator(Of TSource), Func(Of TSource, IEnumerable(Of TResult)))
+  fullName: Genc.Linq.Extensions.SelectMany<TSource, TResult>(Genc.IGenerator<TSource>, System.Func<TSource, System.Collections.Generic.IEnumerable<TResult>>)
+  fullName.vb: Genc.Linq.Extensions.SelectMany(Of TSource, TResult)(Genc.IGenerator(Of TSource), System.Func(Of TSource, System.Collections.Generic.IEnumerable(Of TResult)))
+  nameWithType: Extensions.SelectMany<TSource, TResult>(IGenerator<TSource>, Func<TSource, IEnumerable<TResult>>)
+  nameWithType.vb: Extensions.SelectMany(Of TSource, TResult)(IGenerator(Of TSource), Func(Of TSource, IEnumerable(Of TResult)))
+- uid: Genc.Linq.Extensions.SelectMany``3(Genc.IGenerator{``0},System.Func{``0,Genc.IGenerator{``1}},System.Func{``0,``1,``2})
+  name: SelectMany<TSource, TGenerator, TResult>(IGenerator<TSource>, Func<TSource, IGenerator<TGenerator>>, Func<TSource, TGenerator, TResult>)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_SelectMany__3_Genc_IGenerator___0__System_Func___0_Genc_IGenerator___1___System_Func___0___1___2__
+  commentId: M:Genc.Linq.Extensions.SelectMany``3(Genc.IGenerator{``0},System.Func{``0,Genc.IGenerator{``1}},System.Func{``0,``1,``2})
+  name.vb: SelectMany(Of TSource, TGenerator, TResult)(IGenerator(Of TSource), Func(Of TSource, IGenerator(Of TGenerator)), Func(Of TSource, TGenerator, TResult))
+  fullName: Genc.Linq.Extensions.SelectMany<TSource, TGenerator, TResult>(Genc.IGenerator<TSource>, System.Func<TSource, Genc.IGenerator<TGenerator>>, System.Func<TSource, TGenerator, TResult>)
+  fullName.vb: Genc.Linq.Extensions.SelectMany(Of TSource, TGenerator, TResult)(Genc.IGenerator(Of TSource), System.Func(Of TSource, Genc.IGenerator(Of TGenerator)), System.Func(Of TSource, TGenerator, TResult))
+  nameWithType: Extensions.SelectMany<TSource, TGenerator, TResult>(IGenerator<TSource>, Func<TSource, IGenerator<TGenerator>>, Func<TSource, TGenerator, TResult>)
+  nameWithType.vb: Extensions.SelectMany(Of TSource, TGenerator, TResult)(IGenerator(Of TSource), Func(Of TSource, IGenerator(Of TGenerator)), Func(Of TSource, TGenerator, TResult))
+- uid: Genc.Linq.Extensions.SelectMany``3(Genc.IGenerator{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``1}},System.Func{``0,``1,``2})
+  name: SelectMany<TSource, TCollection, TResult>(IGenerator<TSource>, Func<TSource, IEnumerable<TCollection>>, Func<TSource, TCollection, TResult>)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_SelectMany__3_Genc_IGenerator___0__System_Func___0_System_Collections_Generic_IEnumerable___1___System_Func___0___1___2__
+  commentId: M:Genc.Linq.Extensions.SelectMany``3(Genc.IGenerator{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``1}},System.Func{``0,``1,``2})
+  name.vb: SelectMany(Of TSource, TCollection, TResult)(IGenerator(Of TSource), Func(Of TSource, IEnumerable(Of TCollection)), Func(Of TSource, TCollection, TResult))
+  fullName: Genc.Linq.Extensions.SelectMany<TSource, TCollection, TResult>(Genc.IGenerator<TSource>, System.Func<TSource, System.Collections.Generic.IEnumerable<TCollection>>, System.Func<TSource, TCollection, TResult>)
+  fullName.vb: Genc.Linq.Extensions.SelectMany(Of TSource, TCollection, TResult)(Genc.IGenerator(Of TSource), System.Func(Of TSource, System.Collections.Generic.IEnumerable(Of TCollection)), System.Func(Of TSource, TCollection, TResult))
+  nameWithType: Extensions.SelectMany<TSource, TCollection, TResult>(IGenerator<TSource>, Func<TSource, IEnumerable<TCollection>>, Func<TSource, TCollection, TResult>)
+  nameWithType.vb: Extensions.SelectMany(Of TSource, TCollection, TResult)(IGenerator(Of TSource), Func(Of TSource, IEnumerable(Of TCollection)), Func(Of TSource, TCollection, TResult))
+- uid: Genc.Linq.Extensions.Skip*
+  name: Skip
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Skip_
+  commentId: Overload:Genc.Linq.Extensions.Skip
+  fullName: Genc.Linq.Extensions.Skip
+  nameWithType: Extensions.Skip
+- uid: Genc.Linq.Extensions.Skip``1(Genc.IGenerator{``0},System.Int32)
+  name: Skip<TSource>(IGenerator<TSource>, Int32)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Skip__1_Genc_IGenerator___0__System_Int32_
+  commentId: M:Genc.Linq.Extensions.Skip``1(Genc.IGenerator{``0},System.Int32)
+  name.vb: Skip(Of TSource)(IGenerator(Of TSource), Int32)
+  fullName: Genc.Linq.Extensions.Skip<TSource>(Genc.IGenerator<TSource>, System.Int32)
+  fullName.vb: Genc.Linq.Extensions.Skip(Of TSource)(Genc.IGenerator(Of TSource), System.Int32)
+  nameWithType: Extensions.Skip<TSource>(IGenerator<TSource>, Int32)
+  nameWithType.vb: Extensions.Skip(Of TSource)(IGenerator(Of TSource), Int32)
+- uid: Genc.Linq.Extensions.SkipWhile*
+  name: SkipWhile
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_SkipWhile_
+  commentId: Overload:Genc.Linq.Extensions.SkipWhile
+  fullName: Genc.Linq.Extensions.SkipWhile
+  nameWithType: Extensions.SkipWhile
+- uid: Genc.Linq.Extensions.SkipWhile``1(Genc.IGenerator{``0},System.Func{``0,System.Boolean},System.Int32)
+  name: SkipWhile<TSource>(IGenerator<TSource>, Func<TSource, Boolean>, Int32)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_SkipWhile__1_Genc_IGenerator___0__System_Func___0_System_Boolean__System_Int32_
+  commentId: M:Genc.Linq.Extensions.SkipWhile``1(Genc.IGenerator{``0},System.Func{``0,System.Boolean},System.Int32)
+  name.vb: SkipWhile(Of TSource)(IGenerator(Of TSource), Func(Of TSource, Boolean), Int32)
+  fullName: Genc.Linq.Extensions.SkipWhile<TSource>(Genc.IGenerator<TSource>, System.Func<TSource, System.Boolean>, System.Int32)
+  fullName.vb: Genc.Linq.Extensions.SkipWhile(Of TSource)(Genc.IGenerator(Of TSource), System.Func(Of TSource, System.Boolean), System.Int32)
+  nameWithType: Extensions.SkipWhile<TSource>(IGenerator<TSource>, Func<TSource, Boolean>, Int32)
+  nameWithType.vb: Extensions.SkipWhile(Of TSource)(IGenerator(Of TSource), Func(Of TSource, Boolean), Int32)
+- uid: Genc.Linq.Extensions.Take*
+  name: Take
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Take_
+  commentId: Overload:Genc.Linq.Extensions.Take
+  fullName: Genc.Linq.Extensions.Take
+  nameWithType: Extensions.Take
+- uid: Genc.Linq.Extensions.Take``1(Genc.IGenerator{``0},System.Int32)
+  name: Take<TSource>(IGenerator<TSource>, Int32)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Take__1_Genc_IGenerator___0__System_Int32_
+  commentId: M:Genc.Linq.Extensions.Take``1(Genc.IGenerator{``0},System.Int32)
+  name.vb: Take(Of TSource)(IGenerator(Of TSource), Int32)
+  fullName: Genc.Linq.Extensions.Take<TSource>(Genc.IGenerator<TSource>, System.Int32)
+  fullName.vb: Genc.Linq.Extensions.Take(Of TSource)(Genc.IGenerator(Of TSource), System.Int32)
+  nameWithType: Extensions.Take<TSource>(IGenerator<TSource>, Int32)
+  nameWithType.vb: Extensions.Take(Of TSource)(IGenerator(Of TSource), Int32)
+- uid: Genc.Linq.Extensions.TakeWhile*
+  name: TakeWhile
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_TakeWhile_
+  commentId: Overload:Genc.Linq.Extensions.TakeWhile
+  fullName: Genc.Linq.Extensions.TakeWhile
+  nameWithType: Extensions.TakeWhile
+- uid: Genc.Linq.Extensions.TakeWhile``1(Genc.IGenerator{``0},System.Func{``0,System.Boolean})
+  name: TakeWhile<TSource>(IGenerator<TSource>, Func<TSource, Boolean>)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_TakeWhile__1_Genc_IGenerator___0__System_Func___0_System_Boolean__
+  commentId: M:Genc.Linq.Extensions.TakeWhile``1(Genc.IGenerator{``0},System.Func{``0,System.Boolean})
+  name.vb: TakeWhile(Of TSource)(IGenerator(Of TSource), Func(Of TSource, Boolean))
+  fullName: Genc.Linq.Extensions.TakeWhile<TSource>(Genc.IGenerator<TSource>, System.Func<TSource, System.Boolean>)
+  fullName.vb: Genc.Linq.Extensions.TakeWhile(Of TSource)(Genc.IGenerator(Of TSource), System.Func(Of TSource, System.Boolean))
+  nameWithType: Extensions.TakeWhile<TSource>(IGenerator<TSource>, Func<TSource, Boolean>)
+  nameWithType.vb: Extensions.TakeWhile(Of TSource)(IGenerator(Of TSource), Func(Of TSource, Boolean))
+- uid: Genc.Linq.Extensions.ToArray*
+  name: ToArray
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_ToArray_
+  commentId: Overload:Genc.Linq.Extensions.ToArray
+  fullName: Genc.Linq.Extensions.ToArray
+  nameWithType: Extensions.ToArray
+- uid: Genc.Linq.Extensions.ToArray``1(Genc.IGenerator{``0},System.Int32)
+  name: ToArray<TSource>(IGenerator<TSource>, Int32)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_ToArray__1_Genc_IGenerator___0__System_Int32_
+  commentId: M:Genc.Linq.Extensions.ToArray``1(Genc.IGenerator{``0},System.Int32)
+  name.vb: ToArray(Of TSource)(IGenerator(Of TSource), Int32)
+  fullName: Genc.Linq.Extensions.ToArray<TSource>(Genc.IGenerator<TSource>, System.Int32)
+  fullName.vb: Genc.Linq.Extensions.ToArray(Of TSource)(Genc.IGenerator(Of TSource), System.Int32)
+  nameWithType: Extensions.ToArray<TSource>(IGenerator<TSource>, Int32)
+  nameWithType.vb: Extensions.ToArray(Of TSource)(IGenerator(Of TSource), Int32)
+- uid: Genc.Linq.Extensions.ToDictionary*
+  name: ToDictionary
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_ToDictionary_
+  commentId: Overload:Genc.Linq.Extensions.ToDictionary
+  fullName: Genc.Linq.Extensions.ToDictionary
+  nameWithType: Extensions.ToDictionary
+- uid: Genc.Linq.Extensions.ToDictionary``3(Genc.IGenerator{``0},System.Int32,System.Func{``0,``1},System.Func{``0,``2})
+  name: ToDictionary<TSource, TKey, TValue>(IGenerator<TSource>, Int32, Func<TSource, TKey>, Func<TSource, TValue>)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_ToDictionary__3_Genc_IGenerator___0__System_Int32_System_Func___0___1__System_Func___0___2__
+  commentId: M:Genc.Linq.Extensions.ToDictionary``3(Genc.IGenerator{``0},System.Int32,System.Func{``0,``1},System.Func{``0,``2})
+  name.vb: ToDictionary(Of TSource, TKey, TValue)(IGenerator(Of TSource), Int32, Func(Of TSource, TKey), Func(Of TSource, TValue))
+  fullName: Genc.Linq.Extensions.ToDictionary<TSource, TKey, TValue>(Genc.IGenerator<TSource>, System.Int32, System.Func<TSource, TKey>, System.Func<TSource, TValue>)
+  fullName.vb: Genc.Linq.Extensions.ToDictionary(Of TSource, TKey, TValue)(Genc.IGenerator(Of TSource), System.Int32, System.Func(Of TSource, TKey), System.Func(Of TSource, TValue))
+  nameWithType: Extensions.ToDictionary<TSource, TKey, TValue>(IGenerator<TSource>, Int32, Func<TSource, TKey>, Func<TSource, TValue>)
+  nameWithType.vb: Extensions.ToDictionary(Of TSource, TKey, TValue)(IGenerator(Of TSource), Int32, Func(Of TSource, TKey), Func(Of TSource, TValue))
+- uid: Genc.Linq.Extensions.ToList*
+  name: ToList
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_ToList_
+  commentId: Overload:Genc.Linq.Extensions.ToList
+  fullName: Genc.Linq.Extensions.ToList
+  nameWithType: Extensions.ToList
+- uid: Genc.Linq.Extensions.ToList``1(Genc.IGenerator{``0},System.Int32)
+  name: ToList<TSource>(IGenerator<TSource>, Int32)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_ToList__1_Genc_IGenerator___0__System_Int32_
+  commentId: M:Genc.Linq.Extensions.ToList``1(Genc.IGenerator{``0},System.Int32)
+  name.vb: ToList(Of TSource)(IGenerator(Of TSource), Int32)
+  fullName: Genc.Linq.Extensions.ToList<TSource>(Genc.IGenerator<TSource>, System.Int32)
+  fullName.vb: Genc.Linq.Extensions.ToList(Of TSource)(Genc.IGenerator(Of TSource), System.Int32)
+  nameWithType: Extensions.ToList<TSource>(IGenerator<TSource>, Int32)
+  nameWithType.vb: Extensions.ToList(Of TSource)(IGenerator(Of TSource), Int32)
+- uid: Genc.Linq.Extensions.Where*
+  name: Where
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Where_
+  commentId: Overload:Genc.Linq.Extensions.Where
+  fullName: Genc.Linq.Extensions.Where
+  nameWithType: Extensions.Where
+- uid: Genc.Linq.Extensions.Where``1(Genc.IGenerator{``0},System.Func{``0,System.Boolean},System.Int32)
+  name: Where<TSource>(IGenerator<TSource>, Func<TSource, Boolean>, Int32)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Where__1_Genc_IGenerator___0__System_Func___0_System_Boolean__System_Int32_
+  commentId: M:Genc.Linq.Extensions.Where``1(Genc.IGenerator{``0},System.Func{``0,System.Boolean},System.Int32)
+  name.vb: Where(Of TSource)(IGenerator(Of TSource), Func(Of TSource, Boolean), Int32)
+  fullName: Genc.Linq.Extensions.Where<TSource>(Genc.IGenerator<TSource>, System.Func<TSource, System.Boolean>, System.Int32)
+  fullName.vb: Genc.Linq.Extensions.Where(Of TSource)(Genc.IGenerator(Of TSource), System.Func(Of TSource, System.Boolean), System.Int32)
+  nameWithType: Extensions.Where<TSource>(IGenerator<TSource>, Func<TSource, Boolean>, Int32)
+  nameWithType.vb: Extensions.Where(Of TSource)(IGenerator(Of TSource), Func(Of TSource, Boolean), Int32)
+- uid: Genc.Linq.Extensions.Zip*
+  name: Zip
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Zip_
+  commentId: Overload:Genc.Linq.Extensions.Zip
+  fullName: Genc.Linq.Extensions.Zip
+  nameWithType: Extensions.Zip
+- uid: Genc.Linq.Extensions.Zip``3(Genc.IGenerator{``0},Genc.IGenerator{``1},System.Func{``0,``1,``2})
+  name: Zip<TSource, TSecond, TResult>(IGenerator<TSource>, IGenerator<TSecond>, Func<TSource, TSecond, TResult>)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Zip__3_Genc_IGenerator___0__Genc_IGenerator___1__System_Func___0___1___2__
+  commentId: M:Genc.Linq.Extensions.Zip``3(Genc.IGenerator{``0},Genc.IGenerator{``1},System.Func{``0,``1,``2})
+  name.vb: Zip(Of TSource, TSecond, TResult)(IGenerator(Of TSource), IGenerator(Of TSecond), Func(Of TSource, TSecond, TResult))
+  fullName: Genc.Linq.Extensions.Zip<TSource, TSecond, TResult>(Genc.IGenerator<TSource>, Genc.IGenerator<TSecond>, System.Func<TSource, TSecond, TResult>)
+  fullName.vb: Genc.Linq.Extensions.Zip(Of TSource, TSecond, TResult)(Genc.IGenerator(Of TSource), Genc.IGenerator(Of TSecond), System.Func(Of TSource, TSecond, TResult))
+  nameWithType: Extensions.Zip<TSource, TSecond, TResult>(IGenerator<TSource>, IGenerator<TSecond>, Func<TSource, TSecond, TResult>)
+  nameWithType.vb: Extensions.Zip(Of TSource, TSecond, TResult)(IGenerator(Of TSource), IGenerator(Of TSecond), Func(Of TSource, TSecond, TResult))
+- uid: Genc.Linq.Extensions.Zip``3(Genc.IGenerator{``0},Genc.IGenerator{``1},System.Func{``0,``1,System.Int32,``2})
+  name: Zip<TSource, TSecond, TResult>(IGenerator<TSource>, IGenerator<TSecond>, Func<TSource, TSecond, Int32, TResult>)
+  href: api/Genc.Linq.Extensions.html#Genc_Linq_Extensions_Zip__3_Genc_IGenerator___0__Genc_IGenerator___1__System_Func___0___1_System_Int32___2__
+  commentId: M:Genc.Linq.Extensions.Zip``3(Genc.IGenerator{``0},Genc.IGenerator{``1},System.Func{``0,``1,System.Int32,``2})
+  name.vb: Zip(Of TSource, TSecond, TResult)(IGenerator(Of TSource), IGenerator(Of TSecond), Func(Of TSource, TSecond, Int32, TResult))
+  fullName: Genc.Linq.Extensions.Zip<TSource, TSecond, TResult>(Genc.IGenerator<TSource>, Genc.IGenerator<TSecond>, System.Func<TSource, TSecond, System.Int32, TResult>)
+  fullName.vb: Genc.Linq.Extensions.Zip(Of TSource, TSecond, TResult)(Genc.IGenerator(Of TSource), Genc.IGenerator(Of TSecond), System.Func(Of TSource, TSecond, System.Int32, TResult))
+  nameWithType: Extensions.Zip<TSource, TSecond, TResult>(IGenerator<TSource>, IGenerator<TSecond>, Func<TSource, TSecond, Int32, TResult>)
+  nameWithType.vb: Extensions.Zip(Of TSource, TSecond, TResult)(IGenerator(Of TSource), IGenerator(Of TSecond), Func(Of TSource, TSecond, Int32, TResult))
