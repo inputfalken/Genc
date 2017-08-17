@@ -2,7 +2,6 @@
 using System.Reactive.Linq;
 using System.Threading;
 using Genc;
-using Genc.Linq;
 using NUnit.Framework;
 
 namespace Tests.GeneratorAPI {
