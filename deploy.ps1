@@ -49,9 +49,9 @@ function Fetch-OnlineVersion ([string] $listSource, [string] $projectName, [bool
   # In beta version the version also includes the string "version-beta" where version is the semver.
   if ($isBeta) {
     $version = ($version | select -Last 1).Split("-") | select -First 1
-    # A hack to get set the revision property to zero.
-    $version = "$version.0"
   }
+  # A hack to get set the revision property to zero.
+  $version = "$version.0"
   return [version] $version
 }
 # Gets the local csproj version from the tag 'VersionPrefix'
