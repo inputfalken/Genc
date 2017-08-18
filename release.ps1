@@ -26,5 +26,14 @@ switch ($type) {
   'patch' {
     $doc.Project.PropertyGroup.VersionPrefix = Patch-Increment
   }
+  default {
+    [string] $validArgs = 'valid arguments are: major, minor and patch'
+    if ([string]::IsNullOrEmpty($type)) {
+      Write-Host "Argument required, $validArgs" -Foregroundcolor Yellow
+    } else {
+      Write-Host "'$type' is an invalid argument, $validArgs" -Foregroundcolor Yellow
+    }
+    exit
+  }
 }
 $doc.Save($project.FullName)
