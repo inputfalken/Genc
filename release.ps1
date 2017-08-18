@@ -36,4 +36,5 @@ switch ($type) {
     exit
   }
 }
+# TODO add git support.
 $doc.Save($project.FullName)
