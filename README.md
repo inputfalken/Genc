@@ -12,8 +12,11 @@ Use the Factory class located at `Genc.Generator`.
 
 # Example #
 ```cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Genc;
-using System.Reactive;
+using System.Reactive.Linq;
 
 namespace Example
 {
@@ -28,8 +31,8 @@ namespace Example
 
             // Take 10 numbers from the generator.
             IEnumerable<int> numbers = doubledIncrementer
-            .ToEnumerable()
-            .Take(10);
+            .Take(10)
+            .ToEnumerable();
 
             foreach(int number in numbers)
             {
@@ -38,7 +41,6 @@ namespace Example
         }
     }
 }
-
 ```
 
 # Install #
