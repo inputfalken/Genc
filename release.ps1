@@ -36,5 +36,6 @@ switch ($type) {
     exit
   }
 }
-# TODO add git support.
 $doc.Save($project.FullName)
+git commit $project -m "Bump $type version"
+git push
