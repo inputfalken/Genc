@@ -1,7 +1,7 @@
 ﻿using System;
+using System.Reactive.Linq;
 using System.Threading;
 using Genc;
-using Genc.Linq;
 using NUnit.Framework;
 
 namespace Tests.GeneratorAPI {
@@ -35,11 +35,13 @@ namespace Tests.GeneratorAPI {
             const int maxValue = 100000;
             const int minValue = 1000;
             var result = Generator.Randomizer(minValue, maxValue, seed)
-                .ToArray(length);
+                .Take(length)
+                .ToEnumerable();
             // So the seed can change
             Thread.Sleep(200);
             var expected = Generator.Randomizer(minValue, maxValue, seed)
-                .ToArray(length);
+                .Take(length)
+                .ToEnumerable();
 
             Assert.AreEqual(expected, result);
         }
@@ -50,9 +52,11 @@ namespace Tests.GeneratorAPI {
             const int maxValue = 100000;
             const int minValue = 1000;
             var result = Generator.Randomizer(minValue, maxValue, 100)
-                .ToArray(length);
+                .Take(length)
+                .ToEnumerable();
             var expected = Generator.Randomizer(minValue, maxValue, 200)
-                .ToArray(length);
+                .Take(length)
+                .ToEnumerable();
 
             Assert.AreNotEqual(expected, result);
         }
@@ -62,12 +66,16 @@ namespace Tests.GeneratorAPI {
             const int length = 1000000;
             const int maxValue = 100000;
             const int minValue = 1000;
-            var result = Generator.Randomizer(minValue, maxValue)
-                .ToArray(length);
+            var result = Generator
+                .Randomizer(minValue, maxValue)
+                .Take(length)
+                .ToEnumerable();
             // So the seed can change
             Thread.Sleep(200);
-            var expected = Generator.Randomizer(minValue, maxValue)
-                .ToArray(length);
+            var expected = Generator
+                .Randomizer(minValue, maxValue)
+                .Take(length)
+                .ToEnumerable();
 
             Assert.AreNotEqual(expected, result);
         }
@@ -100,11 +108,13 @@ namespace Tests.GeneratorAPI {
             const long maxValue = long.MaxValue - 20000000;
             const long minValue = 0 + long.MaxValue - 30000000;
             var result = Generator.Randomizer(minValue, maxValue, seed)
-                .ToArray(length);
+                .Take(length)
+                .ToEnumerable();
             // So the seed can change
             Thread.Sleep(200);
             var expected = Generator.Randomizer(minValue, maxValue, seed)
-                .ToArray(length);
+                .Take(length)
+                .ToEnumerable();
 
             Assert.AreEqual(expected, result);
         }
@@ -115,9 +125,12 @@ namespace Tests.GeneratorAPI {
             const long maxValue = long.MaxValue - 20000000;
             const long minValue = 0 + long.MaxValue - 30000000;
             var result = Generator.Randomizer(minValue, maxValue, 100)
-                .ToArray(length);
+                .Take(length)
+                .ToEnumerable();
+
             var expected = Generator.Randomizer(minValue, maxValue, 200)
-                .ToArray(length);
+                .Take(length)
+                .ToEnumerable();
 
             Assert.AreNotEqual(expected, result);
         }
@@ -128,11 +141,13 @@ namespace Tests.GeneratorAPI {
             const long maxValue = long.MaxValue - 20000000;
             const long minValue = 0 + long.MaxValue - 30000000;
             var result = Generator.Randomizer(minValue, maxValue)
-                .ToArray(length);
+                .Take(length)
+                .ToEnumerable();
             // So the seed can change
             Thread.Sleep(200);
             var expected = Generator.Randomizer(minValue, maxValue)
-                .ToArray(length);
+                .Take(length)
+                .ToEnumerable();
 
             Assert.AreNotEqual(expected, result);
         }

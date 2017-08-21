@@ -1,5 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
@@ -9,5 +8,7 @@
     <Description>An api for generating data.</Description>
     <VersionPrefix>0.2.0</VersionPrefix>
   </PropertyGroup>
-
+  <ItemGroup>
+    <PackageReference Include="System.Reactive" Version="4.0.0-preview00001" />
+  </ItemGroup>
 </Project>
