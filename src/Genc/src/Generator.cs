@@ -137,6 +137,17 @@ namespace Genc {
                 );
         }
 
+        public static IObservable<long> Incrementer(long start) {
+            return start.Equals(int.MaxValue)
+                ? throw new OverflowException($"Argument {nameof(start)} cannot be {long.MaxValue}.")
+                : Observable.Generate(
+                    start - 1,
+                    i => i < long.MaxValue,
+                    i => i + 1,
+                    i => i + 1
+                );
+        }
+
         /// <summary>
         ///     <para>
         ///         Creates an finite <see cref="IObservable{T}" /> whose elements are of the type <see cref="int"/> 
@@ -156,6 +167,17 @@ namespace Genc {
                 : Observable.Generate(
                     start + 1,
                     i => i > int.MinValue,
+                    i => i - 1,
+                    i => i - 1
+                );
+        }
+
+        public static IObservable<long> Decrementer(long start) {
+            return start.Equals(int.MinValue)
+                ? throw new OverflowException($"Argument {nameof(start)} cannot be {long.MaxValue}.")
+                : Observable.Generate(
+                    start + 1,
+                    i => i > long.MinValue,
                     i => i - 1,
                     i => i - 1
                 );
