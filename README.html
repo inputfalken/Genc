@@ -63,10 +63,45 @@
 
 <p><a href="https://ci.appveyor.com/project/inputfalken/genc"><img src="https://ci.appveyor.com/api/projects/status/b3q113l8lcpne7r1?svg=true" alt="Build status"></a></p>
 <h1 id="what-is-it">What is it?</h1>
-<p>TODO</p>
+<p>A library using <code>Reactive Extensions</code> for data generation. For example:</p>
+<ul>
+<li>Randomizing numbers</li>
+<li>Incrementing numbers</li>
+<li>Decrementing numbers</li>
+</ul>
 <h1 id="how-do-i-use-it">How do i use it?</h1>
-<p>TODO</p>
-<h1 id="install">Install</h1>
+<p>Use the Factory class located at <code>Genc.Generator</code>.</p>
+<h1 id="example">Example</h1>
+<pre><code class="lang-cs">using System;
+using System.Collections.Generic;
+using System.Linq;
+using Genc;
+using System.Reactive.Linq;
+
+namespace Example
+{
+    class Program
+    {
+        public static void Main()
+        {
+            // Creates a generator which starts at 0 and increments by 1.
+            IObservable&lt;int&gt; incrementer = Generator.Incrementer(start: 0);
+            // A modified incrementer which is doubled for each incrementation.
+            IObservable&lt;int&gt; doubledIncrementer = incrementer.Select(i =&gt; i * 2);
+
+            // Take 10 numbers from the generator.
+            IEnumerable&lt;int&gt; numbers = doubledIncrementer
+            .Take(10)
+            .ToEnumerable();
+
+            foreach(int number in numbers)
+            {
+                Console.Write(number); // prints: 024681012141618
+            }
+        }
+    }
+}
+</code></pre><h1 id="install">Install</h1>
 <p><a href="https://www.nuget.org/packages/Genc/">Nuget</a></p>
 </article>
           </div>
