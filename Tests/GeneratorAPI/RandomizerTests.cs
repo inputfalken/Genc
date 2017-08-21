@@ -34,12 +34,14 @@ namespace Tests.GeneratorAPI {
             const int length = 1000000;
             const int maxValue = 100000;
             const int minValue = 1000;
-            var result = Generator.Randomizer(minValue, maxValue, seed)
+            var result = Generator
+                .Randomizer(minValue, maxValue, seed)
                 .Take(length)
                 .ToEnumerable();
             // So the seed can change
             Thread.Sleep(200);
-            var expected = Generator.Randomizer(minValue, maxValue, seed)
+            var expected = Generator
+                .Randomizer(minValue, maxValue, seed)
                 .Take(length)
                 .ToEnumerable();
 
@@ -51,10 +53,12 @@ namespace Tests.GeneratorAPI {
             const int length = 1000000;
             const int maxValue = 100000;
             const int minValue = 1000;
-            var result = Generator.Randomizer(minValue, maxValue, 100)
+            var result = Generator
+                .Randomizer(minValue, maxValue, 100)
                 .Take(length)
                 .ToEnumerable();
-            var expected = Generator.Randomizer(minValue, maxValue, 200)
+            var expected = Generator
+                .Randomizer(minValue, maxValue, 200)
                 .Take(length)
                 .ToEnumerable();
 
@@ -106,8 +110,9 @@ namespace Tests.GeneratorAPI {
             const int seed = 100;
             const int length = 1000000;
             const long maxValue = long.MaxValue - 20000000;
-            const long minValue = 0 + long.MaxValue - 30000000;
-            var result = Generator.Randomizer(minValue, maxValue, seed)
+            const long minValue = long.MaxValue - 30000000;
+            var result = Generator
+                .Randomizer(minValue, maxValue, seed)
                 .Take(length)
                 .ToEnumerable();
             // So the seed can change
@@ -123,12 +128,14 @@ namespace Tests.GeneratorAPI {
         public void Int64_With_Different_Seed_Does_Not_Gives_Same_Result() {
             const int length = 1000000;
             const long maxValue = long.MaxValue - 20000000;
-            const long minValue = 0 + long.MaxValue - 30000000;
-            var result = Generator.Randomizer(minValue, maxValue, 100)
+            const long minValue = long.MaxValue - 30000000;
+            var result = Generator
+                .Randomizer(minValue, maxValue, 100)
                 .Take(length)
                 .ToEnumerable();
 
-            var expected = Generator.Randomizer(minValue, maxValue, 200)
+            var expected = Generator
+                .Randomizer(minValue, maxValue, 200)
                 .Take(length)
                 .ToEnumerable();
 
@@ -139,13 +146,15 @@ namespace Tests.GeneratorAPI {
         public void Int64_Without_Seed_Does_Not_Gives_Same_Result() {
             const int length = 1000000;
             const long maxValue = long.MaxValue - 20000000;
-            const long minValue = 0 + long.MaxValue - 30000000;
-            var result = Generator.Randomizer(minValue, maxValue)
+            const long minValue = long.MaxValue - 30000000;
+            var result = Generator
+                .Randomizer(minValue, maxValue)
                 .Take(length)
                 .ToEnumerable();
             // So the seed can change
             Thread.Sleep(200);
-            var expected = Generator.Randomizer(minValue, maxValue)
+            var expected = Generator
+                .Randomizer(minValue, maxValue)
                 .Take(length)
                 .ToEnumerable();
 
