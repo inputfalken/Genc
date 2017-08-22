@@ -189,5 +189,15 @@ namespace Genc {
                 l => l - 1
             );
         }
+
+        public static IObservable<double> Randomizer(double min, double max, int? seed) {
+            if (max <= min) throw new ArgumentOutOfRangeException($"{nameof(max)} must be > {nameof(min)}");
+            return Observable.Generate(
+                CreateRandom(seed),
+                rnd => true,
+                rnd => rnd,
+                rnd => rnd.NextDouble() * (max - min) + min
+            );
+        }
     }
 }
