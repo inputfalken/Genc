@@ -6,7 +6,7 @@
     <Company />
     <Authors>Robert Andersson</Authors>
     <Description>An api for generating data.</Description>
-    <VersionPrefix>0.2.2</VersionPrefix>
+    <VersionPrefix>0.2.3</VersionPrefix>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Reactive" Version="4.0.0-preview00001" />
