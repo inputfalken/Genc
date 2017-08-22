@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Reactive.Linq;
 using NUnit.Framework;
 using static Genc.Generator;
@@ -7,6 +6,32 @@ using static Genc.Generator;
 namespace Tests.GeneratorAPI {
     [TestFixture]
     internal class IncrementerTests {
+        private static IEnumerable<int> Expected(int start, int count) {
+            var longs = new List<int>();
+            var current = 0;
+            while (true) {
+                longs.Add(start++);
+                current++;
+                if (current == count) {
+                    break;
+                }
+            }
+            return longs;
+        }
+
+        private static IEnumerable<long> Expected(long start, int count) {
+            var longs = new List<long>();
+            var current = 0;
+            while (true) {
+                longs.Add(start++);
+                current++;
+                if (current == count) {
+                    break;
+                }
+            }
+            return longs;
+        }
+
         [Test]
         public void Int_MinValue_Does_Not_Throw() {
             Assert.DoesNotThrow(() => Incrementer(int.MinValue)
@@ -47,13 +72,7 @@ namespace Tests.GeneratorAPI {
             const long start = long.MaxValue - 5000;
             const int count = 500;
 
-            IEnumerable<long> Expected() {
-                var list = new List<long>();
-                for (var i = start; i < start + count; i++) list.Add(i);
-                return list;
-            }
-
-            var enumerable = Expected();
+            var enumerable = Expected(start, count);
             var result = Incrementer(start).Take(count).ToListObservable();
             Assert.AreEqual(enumerable, result);
         }
@@ -63,13 +82,8 @@ namespace Tests.GeneratorAPI {
             const long start = long.MinValue + 5000;
             const int count = 500;
 
-            IEnumerable<long> Expected() {
-                var list = new List<long>();
-                for (var i = start; i < start + count; i++) list.Add(i);
-                return list;
-            }
 
-            var enumerable = Expected();
+            var enumerable = Expected(start, count);
             var result = Incrementer(start).Take(count).ToListObservable();
             Assert.AreEqual(enumerable, result);
         }
@@ -79,17 +93,16 @@ namespace Tests.GeneratorAPI {
             var start = -20;
             var count = 500;
             var result = Incrementer(start).Take(count).ToListObservable();
-            var expected = Enumerable.Range(start, count);
+            var expected = Expected(start, count);
             Assert.AreEqual(expected, result);
         }
-
 
         [Test]
         public void Start_Twenty() {
             var result = Incrementer(20)
                 .Take(500)
                 .ToEnumerable();
-            var expected = Enumerable.Range(20, 500);
+            var expected = Expected(20, 500);
             Assert.AreEqual(expected, result);
         }
     }
