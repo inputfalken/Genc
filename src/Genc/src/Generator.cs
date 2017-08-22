@@ -123,9 +123,6 @@ namespace Genc {
         /// <returns>
         ///     An <see cref="IObservable{T}" /> with <see cref="int" /> as its generic type.
         /// </returns>
-        /// <example>
-        ///     <code language="C#" region="Incrementer" source="Examples\GeneratorFactory.cs" />
-        /// </example>
         public static IObservable<int> Incrementer(int start) {
             return start.Equals(int.MaxValue)
                 ? throw new OverflowException($"Argument {nameof(start)} cannot be {int.MaxValue}.")
@@ -137,6 +134,16 @@ namespace Genc {
                 );
         }
 
+        /// <summary>
+        ///     <para>
+        ///         Creates an finite <see cref="IObservable{T}" /> whose elements are of the type <see cref="long"/> 
+        ///         which get incremented by 1 until it reaches the value of <see cref="long.MaxValue"/>.
+        ///     </para>
+        /// </summary>
+        /// <param name="start">The inclusive number to start at.</param>
+        /// <returns>
+        ///     An <see cref="IObservable{T}" /> with <see cref="long" /> as its generic type.
+        /// </returns>
         public static IObservable<long> Incrementer(long start) {
             return start.Equals(int.MaxValue)
                 ? throw new OverflowException($"Argument {nameof(start)} cannot be {long.MaxValue}.")
@@ -172,6 +179,16 @@ namespace Genc {
                 );
         }
 
+        /// <summary>
+        ///     <para>
+        ///         Creates an finite <see cref="IObservable{T}" /> whose elements are of the type <see cref="long"/> 
+        ///         which get decremented by 1 until it reaches the value of <see cref="long.MinValue"/>.
+        ///     </para>
+        /// </summary>
+        /// <param name="start">The inclusive number to start at.</param>
+        /// <returns>
+        ///     An <see cref="IObservable{T}" /> with <see cref="long" /> as its generic type.
+        /// </returns>
         public static IObservable<long> Decrementer(long start) {
             return start.Equals(int.MinValue)
                 ? throw new OverflowException($"Argument {nameof(start)} cannot be {long.MaxValue}.")
