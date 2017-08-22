@@ -124,14 +124,12 @@ namespace Genc {
         ///     An <see cref="IObservable{T}" /> with <see cref="int" /> as its generic type.
         /// </returns>
         public static IObservable<int> Incrementer(int start) {
-            return start.Equals(int.MaxValue)
-                ? throw new OverflowException($"Argument {nameof(start)} cannot be {int.MaxValue}.")
-                : Observable.Generate(
-                    start - 1,
-                    i => i < int.MaxValue,
-                    i => i + 1,
-                    i => i + 1
-                );
+            return Observable.Generate(
+                start - 1,
+                i => i < int.MaxValue,
+                i => i + 1,
+                i => i + 1
+            );
         }
 
         /// <summary>
@@ -145,14 +143,12 @@ namespace Genc {
         ///     An <see cref="IObservable{T}" /> with <see cref="long" /> as its generic type.
         /// </returns>
         public static IObservable<long> Incrementer(long start) {
-            return start.Equals(int.MaxValue)
-                ? throw new OverflowException($"Argument {nameof(start)} cannot be {long.MaxValue}.")
-                : Observable.Generate(
-                    start - 1,
-                    i => i < long.MaxValue,
-                    i => i + 1,
-                    i => i + 1
-                );
+            return Observable.Generate(
+                start - 1,
+                i => i < long.MaxValue,
+                i => i + 1,
+                i => i + 1
+            );
         }
 
         /// <summary>
