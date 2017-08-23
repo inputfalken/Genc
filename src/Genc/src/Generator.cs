@@ -190,7 +190,26 @@ namespace Genc {
             );
         }
 
-        public static IObservable<double> Randomizer(double min, double max, int? seed) {
+        /// <summary>
+        ///     <para>
+        ///         Creates an infinite <see cref="IObservable{T}" /> whose elements are of the type <see cref="double" /> that are
+        ///         greater than or equal to argument <paramref name="min" /> and less than argument <paramref name="max" />.
+        ///     </para>
+        /// </summary>
+        /// <param name="min">The inclusive lower bound of the random number returned.</param>
+        /// <param name="max">
+        ///     The exclusive upper bound of the random number returned. Argument <paramref name="max" /> must be greater than or
+        ///     equal to
+        ///     argument <paramref name="min" />.
+        /// </param>
+        /// <param name="seed">
+        ///     A number used to calculate a starting value for the pseudo-random number sequence. If a negative
+        ///     number is specified, the absolute value of the number is used.
+        /// </param>
+        /// <returns>
+        ///     An <see cref="IObservable{T}" /> randomizing doubles.
+        /// </returns>
+        public static IObservable<double> Randomizer(double min, double max, int? seed = null) {
             if (max <= min) throw new ArgumentOutOfRangeException($"{nameof(max)} must be > {nameof(min)}");
             return Observable.Generate(
                 CreateRandom(seed),
