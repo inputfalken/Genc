@@ -10,7 +10,7 @@ Current options:
 * Decrementing numbers
 
 # How do i use it? #
-Use the class located in the namespace: `Genc.Generator`.
+Use the class `Generator` located in the namespace `Genc`.
 
 # Example #
 ```cs
