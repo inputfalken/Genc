@@ -5,8 +5,11 @@
     <RepositoryUrl>https://github.com/inputfalken/Genc</RepositoryUrl>
     <Company />
     <Authors>Robert Andersson</Authors>
-    <Description>An api for generating data.</Description>
+    <Description>A Reactive Extensions data generation library</Description>
     <VersionPrefix>0.4.1</VersionPrefix>
+    <PackageProjectUrl>https://github.com/inputfalken/Genc</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/inputfalken/Genc/LICENCE</PackageLicenseUrl>
+    <RepositoryType>Git</RepositoryType>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Reactive" Version="4.0.0-preview00001" />
