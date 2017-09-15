@@ -12,9 +12,7 @@ namespace Tests.GeneratorAPI {
             while (true) {
                 longs.Add(start++);
                 current++;
-                if (current == count) {
-                    break;
-                }
+                if (current == count) break;
             }
             return longs;
         }
@@ -25,9 +23,7 @@ namespace Tests.GeneratorAPI {
             while (true) {
                 longs.Add(start++);
                 current++;
-                if (current == count) {
-                    break;
-                }
+                if (current == count) break;
             }
             return longs;
         }
@@ -81,7 +77,6 @@ namespace Tests.GeneratorAPI {
         public void Start_Long_MinValue_Plus_Five_Thousand() {
             const long start = long.MinValue + 5000;
             const int count = 500;
-
 
             var enumerable = Expected(start, count);
             var result = Incrementer(start).Take(count).ToListObservable();

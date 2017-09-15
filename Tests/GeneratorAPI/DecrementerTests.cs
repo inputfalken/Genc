@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Reactive.Linq;
 using Genc;
 using NUnit.Framework;
@@ -14,9 +12,7 @@ namespace Tests.GeneratorAPI {
             while (true) {
                 longs.Add(start--);
                 current++;
-                if (current == count) {
-                    break;
-                }
+                if (current == count) break;
             }
             return longs;
         }
@@ -27,24 +23,22 @@ namespace Tests.GeneratorAPI {
             while (true) {
                 longs.Add(start--);
                 current++;
-                if (current == count) {
-                    break;
-                }
+                if (current == count) break;
             }
             return longs;
         }
 
         [Test]
-        public void Start_Int_MinValue_Does_Not_Throw() {
-            Assert.DoesNotThrow(() => Generator.Decrementer(int.MinValue)
+        public void Start_Int_MaxValue_Does_Not_Throw() {
+            Assert.DoesNotThrow(() => Generator.Decrementer(int.MaxValue)
                 .Take(500)
                 .ToEnumerable()
             );
         }
 
         [Test]
-        public void Start_Long_MinValue_Does_Not_Throw() {
-            Assert.DoesNotThrow(() => Generator.Decrementer(long.MinValue)
+        public void Start_Int_MinValue_Does_Not_Throw() {
+            Assert.DoesNotThrow(() => Generator.Decrementer(int.MinValue)
                 .Take(500)
                 .ToEnumerable()
             );
@@ -58,6 +52,32 @@ namespace Tests.GeneratorAPI {
         }
 
         [Test]
+        public void Start_Long_MaxValue_Does_Not_Throw() {
+            Assert.DoesNotThrow(() => Generator.Decrementer(long.MaxValue)
+                .Take(500)
+                .ToEnumerable()
+            );
+        }
+
+        [Test]
+        public void Start_Long_MaxValue_Minus_Five_Thousand() {
+            const long start = long.MaxValue - 5000;
+            const int count = 500;
+
+            var enumerable = Expected(start, count);
+            var result = Generator.Decrementer(start).Take(count).ToListObservable();
+            Assert.AreEqual(enumerable, result);
+        }
+
+        [Test]
+        public void Start_Long_MinValue_Does_Not_Throw() {
+            Assert.DoesNotThrow(() => Generator.Decrementer(long.MinValue)
+                .Take(500)
+                .ToEnumerable()
+            );
+        }
+
+        [Test]
         public void Start_Long_MinValue_Includes_MinValue_Only() {
             var listObservable = Generator.Decrementer(long.MinValue).ToListObservable();
             Assert.AreEqual(1, listObservable.Count);
@@ -65,19 +85,13 @@ namespace Tests.GeneratorAPI {
         }
 
         [Test]
-        public void Start_Int_MaxValue_Does_Not_Throw() {
-            Assert.DoesNotThrow(() => Generator.Decrementer(int.MaxValue)
-                .Take(500)
-                .ToEnumerable()
-            );
-        }
+        public void Start_Long_MinValue_Plus_Five_Thousand() {
+            const long start = long.MinValue + 5000;
+            const int count = 500;
 
-        [Test]
-        public void Start_Long_MaxValue_Does_Not_Throw() {
-            Assert.DoesNotThrow(() => Generator.Decrementer(long.MaxValue)
-                .Take(500)
-                .ToEnumerable()
-            );
+            var enumerable = Expected(start, count);
+            var result = Generator.Decrementer(start).Take(count).ToListObservable();
+            Assert.AreEqual(enumerable, result);
         }
 
         [Test]
@@ -94,26 +108,6 @@ namespace Tests.GeneratorAPI {
         }
 
         [Test]
-        public void Start_Long_MinValue_Plus_Five_Thousand() {
-            const long start = long.MinValue + 5000;
-            const int count = 500;
-
-            var enumerable = Expected(start, count);
-            var result = Generator.Decrementer(start).Take(count).ToListObservable();
-            Assert.AreEqual(enumerable, result);
-        }
-
-        [Test]
-        public void Start_Long_MaxValue_Minus_Five_Thousand() {
-            const long start = long.MaxValue - 5000;
-            const int count = 500;
-
-            var enumerable = Expected(start, count);
-            var result = Generator.Decrementer(start).Take(count).ToListObservable();
-            Assert.AreEqual(enumerable, result);
-        }
-
-        [Test]
         public void Start_Twenty() {
             const int start = 20;
             const int count = 500;
@@ -123,7 +117,6 @@ namespace Tests.GeneratorAPI {
             var expected = Expected(start, count);
             Assert.AreEqual(expected, result);
         }
-
 
         [Test]
         public void To_Int_Min_Value() {

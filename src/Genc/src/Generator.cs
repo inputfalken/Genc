@@ -83,16 +83,12 @@ namespace Genc {
             //Working with ulong so that modulo works correctly with values > long.MaxValue
         }
 
-
         /// <summary>
         ///     <para>Creates <see cref="Random" /> with seed if it's not set to null.</para>
         /// </summary>
-        private static Random CreateRandom(int? seed) {
-            return seed == null
-                ? new Random()
-                : new Random(seed.Value);
-        }
-
+        private static Random CreateRandom(int? seed) => seed == null
+            ? new Random()
+            : new Random(seed.Value);
 
         /// <summary>
         ///     <para>
